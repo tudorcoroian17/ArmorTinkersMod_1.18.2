@@ -1,10 +1,12 @@
 package me.tudorcoroian.armortinkers;
 
 import com.mojang.logging.LogUtils;
+import me.tudorcoroian.armortinkers.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
@@ -25,8 +27,12 @@ public class ArmorTinkers {
     public static final String MOD_ID = "armortinkers";
 
     public ArmorTinkers() {
+        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        // Register the items added by the mod
+        ModItems.register(eventBus);
+
         // Register the setup method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        eventBus.addListener(this::setup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
