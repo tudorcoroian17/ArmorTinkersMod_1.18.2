@@ -1,6 +1,7 @@
 package me.tudorcoroian.armortinkers;
 
 import com.mojang.logging.LogUtils;
+import me.tudorcoroian.armortinkers.block.ModBlocks;
 import me.tudorcoroian.armortinkers.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -28,8 +29,11 @@ public class ArmorTinkers {
 
     public ArmorTinkers() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
         // Register the items added by the mod
         ModItems.register(eventBus);
+        // Register the blocks added by the mod
+        ModBlocks.register(eventBus);
 
         // Register the setup method for modloading
         eventBus.addListener(this::setup);
