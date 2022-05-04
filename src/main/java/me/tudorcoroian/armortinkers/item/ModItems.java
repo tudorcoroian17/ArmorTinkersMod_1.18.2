@@ -15,7 +15,7 @@ public class ModItems {
 
     // First tier of the mod guide book
     public static final RegistryObject<Item> GUIDE_BOOK_TIER_1 = ITEMS.register("guide_book_t1",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB)));
 
     // Register all the items in the list
     public static void register(IEventBus eventBus) {

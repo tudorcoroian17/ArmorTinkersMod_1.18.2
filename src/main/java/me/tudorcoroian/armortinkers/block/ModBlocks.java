@@ -1,6 +1,7 @@
 package me.tudorcoroian.armortinkers.block;
 
 import me.tudorcoroian.armortinkers.ArmorTinkers;
+import me.tudorcoroian.armortinkers.item.ModCreativeModeTab;
 import me.tudorcoroian.armortinkers.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -23,7 +24,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALUMINIUM_BLOCK = registerBlock("aluminium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(9f).requiresCorrectToolForDrops()),
-            CreativeModeTab.TAB_MISC);
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
 
     // Register the block created in this class
     private static <T extends Block> RegistryObject<T> registerBlock(String name,
