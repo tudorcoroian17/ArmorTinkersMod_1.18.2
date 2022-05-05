@@ -1,6 +1,10 @@
 {
   "item.armortinkers.guide_book_t1" : "Book of the Novice Armorer",
   "item.armortinkers.aluminium_ingot": "Aluminium Ingot",
+  "item.armortinkers.hide_cap": "Hide Cap",
+  "item.armortinkers.hide_vest": "Hide Vest",
+  "item.armortinkers.hide_pants": "Hide Pants",
+  "item.armortinkers.hide_socks": "Hide Socks",
 
   "block.armortinkers.aluminium_block" : "Aluminium Block",
 

@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab ARMOR_TINKERS_TAB = new CreativeModeTab("armortinkerstab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.GUIDE_BOOK_TIER_1.get());
+            return new ItemStack(ModItems.HIDE_VEST.get());
         }
     };
 }
