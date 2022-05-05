@@ -23,7 +23,7 @@ public class ModBlocks {
     // Create the blocks
     public static final RegistryObject<Block> ALUMINIUM_BLOCK = registerBlock("aluminium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(9f).requiresCorrectToolForDrops()),
+                    .strength(6f).requiresCorrectToolForDrops()),
             ModCreativeModeTab.ARMOR_TINKERS_TAB);
 
     // Register the block created in this class
