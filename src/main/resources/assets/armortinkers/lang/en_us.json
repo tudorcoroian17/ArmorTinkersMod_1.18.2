@@ -8,5 +8,7 @@
 
   "block.armortinkers.aluminium_block" : "Aluminium Block",
 
-  "itemGroup.armortinkerstab": "Armor Tinkers"
+  "itemGroup.armortinkerstab": "Armor Tinkers",
+
+  "tooltip.armortinkers.hide_armour.tooltip": "§8§oUnwearable"
 }
