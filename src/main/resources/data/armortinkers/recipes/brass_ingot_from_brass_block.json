@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "armortinkers:brass_block"
+    }
+  ],
+  "result": {
+    "item": "armortinkers:brass_ingot",
+    "count": 9
+  }
+}

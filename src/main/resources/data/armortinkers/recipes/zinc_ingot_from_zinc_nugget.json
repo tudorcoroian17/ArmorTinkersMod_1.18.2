@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "armortinkers:zinc_nugget"
+    }
+  },
+  "result": {
+    "item": "armortinkers:zinc_ingot"
+  }
+}

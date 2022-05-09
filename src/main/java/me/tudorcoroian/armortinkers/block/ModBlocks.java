@@ -20,10 +20,38 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ArmorTinkers.MOD_ID);
 
-    // Create the blocks
+    // New materials
     public static final RegistryObject<Block> ALUMINIUM_BLOCK = registerBlock("aluminium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(6f).requiresCorrectToolForDrops()),
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> SILVER_BLOCK = registerBlock("silver_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> ZINC_BLOCK = registerBlock("zinc_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> MAGNESIUM_BLOCK = registerBlock("magnesium_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> BRASS_BLOCK = registerBlock("brass_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("bronze_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()),
             ModCreativeModeTab.ARMOR_TINKERS_TAB);
 
     // Register the block created in this class

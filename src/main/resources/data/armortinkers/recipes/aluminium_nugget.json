@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "armortinkers:aluminium_ingot"
+    }
+  ],
+  "result": {
+    "item": "armortinkers:aluminium_nugget",
+    "count": 9
+  }
+}

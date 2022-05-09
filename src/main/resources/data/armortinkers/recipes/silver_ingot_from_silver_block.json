@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "armortinkers:silver_block"
+    }
+  ],
+  "result": {
+    "item": "armortinkers:silver_ingot",
+    "count": 9
+  }
+}

@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
-    "armortinkers:aluminium_block"
+    "armortinkers:aluminium_block",
+    "armortinkers:tin_block",
+    "armortinkers:lead_block",
+    "armortinkers:silver_block",
+    "armortinkers:zinc_block",
+    "armortinkers:magnesium_block",
+    "armortinkers:brass_block",
+    "armortinkers:bronze_block"
   ]
 }

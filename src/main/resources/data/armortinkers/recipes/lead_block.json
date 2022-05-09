@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "armortinkers:lead_ingot"
+    }
+  },
+  "result": {
+    "item": "armortinkers:lead_block"
+  }
+}

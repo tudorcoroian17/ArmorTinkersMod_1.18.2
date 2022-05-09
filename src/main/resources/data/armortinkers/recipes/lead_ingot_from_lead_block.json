@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "armortinkers:lead_block"
+    }
+  ],
+  "result": {
+    "item": "armortinkers:lead_ingot",
+    "count": 9
+  }
+}

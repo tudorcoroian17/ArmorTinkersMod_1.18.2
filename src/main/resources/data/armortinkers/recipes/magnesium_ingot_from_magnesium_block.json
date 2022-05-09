@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "armortinkers:magnesium_block"
+    }
+  ],
+  "result": {
+    "item": "armortinkers:magnesium_ingot",
+    "count": 9
+  }
+}
