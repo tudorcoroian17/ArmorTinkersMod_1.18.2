@@ -8,6 +8,18 @@
     "armortinkers:zinc_block",
     "armortinkers:magnesium_block",
     "armortinkers:brass_block",
-    "armortinkers:bronze_block"
+    "armortinkers:bronze_block",
+    "armortinkers:aluminium_ore",
+    "armortinkers:tin_ore",
+    "armortinkers:lead_ore",
+    "armortinkers:silver_ore",
+    "armortinkers:zinc_ore",
+    "armortinkers:magnesium_ore",
+    "armortinkers:aluminium_deepslate_ore",
+    "armortinkers:tin_deepslate_ore",
+    "armortinkers:lead_deepslate_ore",
+    "armortinkers:silver_deepslate_ore",
+    "armortinkers:zinc_deepslate_ore",
+    "armortinkers:magnesium_deepslate_ore"
   ]
 }

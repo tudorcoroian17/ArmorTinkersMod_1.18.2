@@ -54,6 +54,55 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops()),
             ModCreativeModeTab.ARMOR_TINKERS_TAB);
 
+    public static final RegistryObject<Block> ALUMINIUM_ORE = registerBlock("aluminium_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> ALUMINIUM_DEEPSLATE_ORE = registerBlock("aluminium_deepslate_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2.5f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> TIN_DEEPSLATE_ORE = registerBlock("tin_deepslate_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2.5f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> LEAD_ORE = registerBlock("lead_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> LEAD_DEEPSLATE_ORE = registerBlock("lead_deepslate_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2.5f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> SILVER_DEEPSLATE_ORE = registerBlock("silver_deepslate_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2.5f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> ZINC_ORE = registerBlock("zinc_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> ZINC_DEEPSLATE_ORE = registerBlock("zinc_deepslate_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2.5f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> MAGNESIUM_ORE = registerBlock("magnesium_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> MAGNESIUM_DEEPSLATE_ORE = registerBlock("magnesium_deepslate_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2.5f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+
     // Register the block created in this class
     private static <T extends Block> RegistryObject<T> registerBlock(String name,
                                                                      Supplier<T> block,

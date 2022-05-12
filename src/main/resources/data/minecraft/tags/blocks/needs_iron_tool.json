@@ -3,6 +3,10 @@
   "values": [
     "armortinkers:lead_block",
     "armortinkers:silver_block",
-    "armortinkers:brass_block"
+    "armortinkers:brass_block",
+    "armortinkers:lead_ore",
+    "armortinkers:silver_ore",
+    "armortinkers:lead_deepslate_ore",
+    "armortinkers:silver_deepslate_ore"
   ]
 }
