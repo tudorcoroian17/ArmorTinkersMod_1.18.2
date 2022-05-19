@@ -3,6 +3,8 @@ package me.tudorcoroian.armortinkers;
 import com.mojang.logging.LogUtils;
 import me.tudorcoroian.armortinkers.block.ModBlocks;
 import me.tudorcoroian.armortinkers.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -11,6 +13,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
@@ -37,6 +40,7 @@ public class ArmorTinkers {
 
         // Register the setup method for modloading
         eventBus.addListener(this::setup);
+        eventBus.addListener(this::clientSetup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -46,5 +50,9 @@ public class ArmorTinkers {
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+    }
+
+    private void clientSetup(final FMLClientSetupEvent event) {
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ARMOR_PART_MAKER.get(), RenderType.cutout());
     }
 }

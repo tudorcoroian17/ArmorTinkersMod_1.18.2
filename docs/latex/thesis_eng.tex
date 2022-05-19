@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% File: thesis.tex, version 1.7, March 2021
+%%%
+%%% =============================================
+%%% This file contains a template that can be used with the package
+%%% cs.sty and LaTeX2e to produce a thesis that meets the requirements
+%%% of the Computer Science Department from the Technical University of Cluj-Napoca
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper,twoside]{report}         
+\usepackage{cs}
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+%\usepackage[romanian]{babel}              
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{amsmath,amsbsy}
+\usepackage{amssymb}
+\usepackage[matrix,arrow]{xy}
+\usepackage{ae,aecompl}
+\usepackage{amstext}
+\usepackage{graphics}
+\usepackage{ae,aecompl}
+\usepackage{algorithm}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref} 
+%% decomentati linia urmatoare pentru e nu mai evidenția hiper legăturile pentru imprimare pe hârtie
+%\hypersetup{hidelinks}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{enumitem}
+
+\setlist{noitemsep,nolistsep}
+
+\diplomathesis
+\centerchapter
+\singlespace
+\newenvironment{definition}[1][Definition.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Change the last element accordingly
+\renewcommand{\thesisauthor}{Firstname LASTNAME}    %% Your first name(s) and family name.
+\renewcommand{\thesismonth}{July}     %% The month of the licence session
+\renewcommand{\thesisyear}{2022}      %% The year of the 
+\renewcommand{\thesistitle}{LICENSE THESIS TITLE} % Title of the thesis
+\renewcommand{\thesissupervisor}{scientific title Firstname LASTNAME} %% Supervisor
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\makeThesisTitle}{\textbf{\thesistitletypesize \thesistitle}}
+\newcommand{\makeThesisType}{\thesistypetypesize \thesistype}
+\newcommand{\department}{\sffamily\bfseries\small FACULTY OF AUTOMATION AND COMPUTER SCIENCE} 
+\renewcommand{\thesistype}{LICENSE THESIS}
+\newcommand{\uline}[1]{\rule[0pt]{#1}{0.4pt}}
+%\renewcommand{\thesisdedication}{Părinților mei}
+
+% Headings pentru folie de capăt
+
+ \geometry{
+	a4paper,
+	total={159.2mm,246.2mm},
+	left=25.4mm,
+	top=25.4mm,
+}
+
+
+\begin{document}
+\include{first_pages} % the first 3 pages
+%%%%%%%%%%%%%%%%% Advices page to remove
+\thispagestyle{empty}
+\include{guideline} 
+\newpage
+%%%%%%%%%%%%%%%%%% edn of advices page
+\pagestyle{fancy}
+\setlength\headheight{16.0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername~\thechapter.~#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\renewcommand{\headrulewidth}{0.4pt}
+\lhead{}
+\chead{%
+	\leftmark\rightmark
+}
+\chead{}
+\cfoot{\thepage}
+\lfoot{}
+\rfoot{}
+
+%%%%%%%%%%%% Table of contents
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+%\listoftables
+%\listoffigures
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+\titleformat{\chapter}[hang] 
+{\normalfont\Large\bfseries}{\chaptertitlename\ \thechapter.}{1em}{}
+\titleformat{\section}[hang] 
+{\normalfont\large\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}[hang] 
+{\normalfont}{\thesubsection.}{1em}{}
+
+\include{introduction} % \chapter{Introdution}
+
+\include{objectives} % \chapter{Obiectivele Proiectului}
+
+\include{study_biblio} % \chapter{Studiu Bibliografic}
+
+\include{analisys} % \chapter{Analiză și Fundamentare Teoretică}
+
+\include{design_implementation} % \chapter{Proiectare de Detaliu și Implementare}
+
+\include{test_validate} % \chapter{Testare și Validare}
+
+\include{install_use} % \chapter{Manual de Instalare și Utilizare}
+
+\include{conclusions} % \chapter{Concluzii}
+
+
+\bibliographystyle{IEEEtran} 
+\bibliography{thesis}%same file name as for .bib
+
+\include{appendix}
+
+\end{document}

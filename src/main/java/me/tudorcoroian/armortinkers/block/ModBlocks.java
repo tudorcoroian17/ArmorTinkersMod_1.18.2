@@ -1,6 +1,7 @@
 package me.tudorcoroian.armortinkers.block;
 
 import me.tudorcoroian.armortinkers.ArmorTinkers;
+import me.tudorcoroian.armortinkers.block.custom.ArmorPartMakerBlock;
 import me.tudorcoroian.armortinkers.item.ModCreativeModeTab;
 import me.tudorcoroian.armortinkers.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -8,6 +9,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.OreBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -103,6 +105,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> MAGNESIUM_DEEPSLATE_ORE = registerBlock("magnesium_deepslate_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(2.5f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+
+    public static final RegistryObject<Block> ARMOR_PART_MAKER = registerBlock("armor_part_maker",
+            () -> new ArmorPartMakerBlock(BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE).noOcclusion()),
             ModCreativeModeTab.ARMOR_TINKERS_TAB);
 
     // Register the block created in this class

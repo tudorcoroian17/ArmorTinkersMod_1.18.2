@@ -55,6 +55,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB)));
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB)));
+    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB)));
     public static final RegistryObject<Item> RAW_ALUMINIUM = ITEMS.register("raw_aluminium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB)));
     public static final RegistryObject<Item> RAW_TIN = ITEMS.register("raw_tin",

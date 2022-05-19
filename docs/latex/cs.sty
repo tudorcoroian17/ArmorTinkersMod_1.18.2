@@ -1,0 +1,452 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% File: cs.sty, version 0.1, May 2010
+%%%%%% =============================================
+%%% Usage:
+%%% ======
+%%%
+%%% Include this file as a package in the preamble:
+%%%
+%%% \documentclass[...]{report}
+%%% \usepackage{cs}
+
+\setlength{\textheight}{609pt} %{11.69in}- 0.79-0.79"        BKay
+%\setlength{\oddsidemargin}{0.79in}  %{0.5in} + 1/8" BKay
+%\setlength{\evensidemargin}{0.79in} %{0.5in}        BKay
+\setlength{\oddsidemargin}{18pt}  %{0.5in} + 1/8" BKay
+\setlength{\evensidemargin}{0pt} %{0.5in}        BKay
+\setlength{\textwidth}{459pt}
+\setlength{\topmargin}{0pt} %{0.5in}+1/8"        BKay
+\setlength{\headheight}{12pt}
+\setlength{\headsep}{12pt}
+\setlength{\parindent}{12mm}
+
+%%%
+%%% Set up default values.
+%%%
+\newcommand{\@universityname}{Technical University of Cluj-Napoca}
+%\newcommand{\@publicationno}{Publica\c{t}ia nr.\ \line(1,0){40} \\[10mm]}
+\newcommand{\thesisauthor}{CS Student}
+\newcommand{\thesismonth}{June}
+\newcommand{\thesisyear}{2010}
+\newcommand{\thesistitle}{Title of the project}
+\newcommand{\thesistitletypesize}{\Large}
+\newcommand{\thesisauthorpreviousdegrees}{Degree}
+\newcommand{\thesissupervisor}{Conduc\u{a}tor}
+\newcommand{\thesiscosupervisor}{}
+\newcommand{\thesistype}{Dissertation}
+\newcommand{\thesistypetypesize}{\normalsize}
+\newcommand{\thesistypesize}{\large}
+%\newcommand{\thesisdegree}{Phd. in Computer Science}
+\newcommand{\thesisdegreetypesize}{\large}
+\newcommand{\thesisdegreeabbreviation}{Ph.D.}
+\newcommand{\thesisstudent}{\thesisauthor}
+\newcommand{\thesisstudenttypesize}{\large}
+\newcommand{\authordeclaration}{I, CS Student}
+
+\newcommand{\mastersthesis}{}
+\newcommand{\diplomathesis}{}
+
+
+\newcommand{\@emptycommand}{} 
+\newcommand{\@defaultbaselinestretch}{1.0}
+\newcommand{\@base}[1]{\renewcommand{\baselinestretch}{#1}}
+
+\newcommand{\singlespace}{\singlespacing}
+\newcommand{\oneandhalfspace}{\onehalfspacing}
+\newcommand{\doublespace}{\doublespacing}
+
+\newcommand{\@thesistitle}{\textbf{\thesistitletypesize \thesistitle}}
+\newcommand{\@thesistype}{\thesistypetypesize \thesistype}
+\newcommand{\@thesisstudent}{\textbf{\thesisstudenttypesize \thesisstudent}}
+
+%%%
+%%% Indent the first paragraph after a sectioning command.
+%%%
+\let\@afterindentfalse\@afterindenttrue
+\@afterindenttrue
+
+%%%
+%%% Set up default page numbering and line spacing.
+%%%
+\newcommand{\@textpagenumbering}{arabic}
+%rs01\newcommand{\@preamblepagenumbering}{roman}
+\newcommand{\@preamblepagenumbering}{arabic}
+\newcommand{\@textpagestyle}{plain}
+\newcommand{\@preamblepagestyle}{plain}
+\pagenumbering{\@preamblepagenumbering}
+\@base{\@defaultbaselinestretch}
+
+\newcommand{\@chaptertype}{\chaptername}
+\newcommand{\@appendix}{0}
+
+
+%%%
+%%% Environment to generate abstract page.
+%%%
+\newenvironment{thesisabstract}
+    {\chapter*{}
+     \addcontentsline{toc}{chapter}{Abstract}
+     \vspace*{0mm}
+     \begin{center}
+       \setlength{\unitlength}{1mm}
+       \begin{spacing}{2}
+       \@thesistitle \\[10mm]
+       \end{spacing}
+       \begin{spacing}{\@defaultbaselinestretch}
+       \@publicationno
+       \thesisauthor, \thesisdegreeabbreviation \\
+       \@universityname, \thesisyear \\[10mm]
+       \end{spacing}
+       Conducător: \thesissupervisor \\
+     \end{center}
+     \vspace{5mm}
+     \begin{spacing}{\@defaultbaselinestretch} \noindent}
+    {\end{spacing} \newpage}
+
+%%%
+%%% Command to generate dedication page.
+%%%
+%\newcommand{\authordeclarationpage}{
+%    \thispagestyle{empty}
+%    \strut \vfill
+%    \begin{spacing}{\@defaultbaselinestretch}
+%    \begin{center}
+%      \authordeclaration
+%    \end{center}
+%    \end{spacing}
+%    \vfill \strut
+%    \newpage}
+\newcommand{\authordeclarationpage}{
+               Declaratia
+  \pagebreak
+
+}
+
+
+
+\newcommand{\@chapteralignment}{\centering}
+\renewcommand{\chapter}{\clearpage
+   \ifnum\@appendix=1
+     \renewcommand{\@chaptertype}{\appendixname}
+   \else
+     \renewcommand{\@chaptertype}{\chaptername}
+   \fi
+   \thispagestyle{plain}%
+   \global\@topnum\z@
+   \@afterindentfalse
+   \secdef\@chapter\@schapter
+   }
+\renewcommand\appendix{\par
+  \setcounter{chapter}{0}%
+  \setcounter{section}{0}%
+  \renewcommand{\@chapapp}{\appendixname}%
+  \renewcommand{\thechapter}{\Alph{chapter}}
+  \renewcommand{\@appendix}{1}}
+
+%%%
+%%% Define chapter heading placement commands.
+%%%
+\newcommand{\leftchapter}{
+    \renewcommand{\@chapteralignment}{\raggedright}}
+\newcommand{\centerchapter}{
+    \renewcommand{\@chapteralignment}{\centering}}
+\newcommand{\rightchapter}{
+    \renewcommand{\@chapteralignment}{\raggedleft}}
+
+%%%
+%%% Command from report.cls, (c) LaTeX3 Project.
+%%%
+\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
+                      \refstepcounter{chapter}%
+                      \typeout{\@chapapp\space\thechapter.}%
+                      \addcontentsline{toc}{chapter}%
+                          {\@chaptertype{} \protect\numberline{\thechapter}#1}%
+                    \else
+                      \addcontentsline{toc}{chapter}{\@chaptertype{} #1}
+                    \fi
+                    \ifnum\value{chapter}=1
+                      \ifnum\@appendix=0
+                        \pagestyle{\@textpagestyle}
+                        %rs01 \pagenumbering{\@textpagenumbering}
+                      \fi
+                    \fi
+                    \chaptermark{#1}%
+                    \addtocontents{lof}{\protect\addvspace{10\p@}}%
+                    \addtocontents{lot}{\protect\addvspace{10\p@}}%
+                    \if@twocolumn
+                      \@topnewpage[\@makechapterhead{#2}]%
+                    \else
+                      \@makechapterhead{#2}%
+                      \@afterheading
+                    \fi
+                    }
+
+%%%
+%%% Command from report.cls, (c) LaTeX3 Project.
+%%%
+\def\@makechapterhead#1{%
+  %\vspace*{50\p@}%
+  {\parindent \z@ \@chapteralignment \reset@font
+    \ifnum \c@secnumdepth >\m@ne
+      \huge\bfseries \@chapapp{} \thechapter
+      \par
+      \vskip 20\p@
+    \fi
+    \Huge \bfseries #1\par
+    \nobreak
+    \vskip 20\p@
+  }}
+\def\@makeschapterhead#1{%
+  %\vspace*{50\p@}%
+  {\parindent \z@ \@chapteralignment
+    \reset@font
+    \Huge \bfseries  #1\par
+    \nobreak
+    \vskip 20\p@
+  }}
+
+\renewenvironment{thebibliography}[1]
+     {\chapter*{\bibname
+        \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}}%
+      \addcontentsline{toc}{chapter}{\bibname}
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy\clubpenalty4000\widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+
+
+\renewcommand\listoftables{%
+    \clearpage  %%% AME 
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \chapter*{\listtablename
+      \@mkboth{\uppercase{\listtablename}}{\uppercase{\listtablename}}}%
+    \addcontentsline{toc}{chapter}{\listtablename}
+    \@starttoc{lot}%
+    \if@restonecol\twocolumn\fi
+    }
+\renewcommand\listoffigures{%
+    \clearpage  %%% AME 
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \chapter*{\listfigurename
+      \@mkboth{\uppercase{\listfigurename}}%
+              {\uppercase{\listfigurename}}}%
+    \addcontentsline{toc}{chapter}{\listfigurename}
+    \@starttoc{lof}%
+    \if@restonecol\twocolumn\fi
+    }
+%\renewcommand\tableofcontents{%
+%    \if@twocolumn
+%      \@restonecoltrue\onecolumn
+%    \else
+%      \@restonecolfalse
+%    \fi
+%    \chapter*{\contentsname
+%        \@mkboth{\uppercase{\contentsname}}{\uppercase{\contentsname}}}%
+%    \@starttoc{toc}%
+%    \if@restonecol\twocolumn\fi
+%    }
+
+
+%%%
+%%% Code to compute current timestamp.  Some parts by Martin Minow.
+%%%
+\newcount\hour \newcount\minute
+\hour=\time  \divide \hour by 60
+\minute=\time
+\loop \ifnum \minute > 59 \advance \minute by -60 \repeat
+\def\thesistime{\ifnum \hour<13 \number\hour:%
+                      \ifnum \minute<10 0\fi
+                      \number\minute
+                      \ifnum \hour<12 \ am\else \ pm\fi
+         \else \advance \hour by -12 \number\hour:%
+                      \ifnum \minute<10 0\fi
+                      \number\minute \ pm\fi}
+
+\def\thesisdate{\ifcase\month\or
+January\or February\or March\or April\or May\or June\or
+July\or August\or September\or October\or November\or December\fi
+\space\number\day, \number\year}
+
+\newcount\dow
+\newcount\leap
+\newcount\x
+\newcount\y
+
+%leap = year + (month - 14)/12
+\leap=\month \advance\leap by -14 \divide\leap by 12
+  \advance\leap by \year
+
+%dow = (13 * (month + 10 - (month + 10)/13*12) - 1)/5
+\dow=\month \advance\dow by 10
+  \y=\dow \divide\y by 13 \multiply\y by 12
+  \advance\dow by -\y \multiply\dow by 13 \advance\dow by -1 \divide\dow by 5
+
+%dow += day + 77 + 5 * (leap % 100)/4
+\advance\dow by \day \advance\dow by 77
+  \x=\leap \y=\x \divide\y by 100 \multiply\y by 100 \advance\x by -\y
+  \multiply\x by 5 \divide\x by 4 \advance\dow by \x
+
+%dow += leap / 400
+\x=\leap \divide\x by 400 \advance\dow by \x
+
+%dow -= leap / 100 * 2;
+%dow = (dow % 7)
+\x=\leap \divide\x by 100 \multiply\x by 2 \advance\dow by -\x
+  \x=\dow \divide\x by 7 \multiply\x by 7 \advance\dow by -\x
+
+\def\thesisdayofweek{\ifcase\dow
+Sunday\or Monday\or Tuesday\or
+Wednesday\or Thursday\or Friday\or Saturday\fi}
+
+\def\timestamp{\thesistime, \thesisdayofweek, \thesisdate}
+
+%%%
+%%% Spacing commands
+%%%
+%%% Most from setspace.sty by Geoffrey Tobin 
+%%% 
+%%%
+
+\newcommand{\setstretch}[1]{%   %%% AME setup to use setspace macros
+  \def\baselinestretch{#1}%
+  \@currsize
+}
+
+\newcommand{\SetSinglespace}[1]{%
+  \def\setspace@singlespace{#1}%
+}
+
+\SetSinglespace{1}
+
+\newcommand{\singlespacing}{%
+  \setstretch {\setspace@singlespace}%  normally 1
+  \vskip \baselineskip  % Correction for coming into singlespace
+}
+
+\newcommand{\onehalfspacing}{%
+  \setstretch{1.25}%  default
+  \ifcase \@ptsize \relax % 10pt
+    \setstretch {1.25}%
+  \or % 11pt
+    \setstretch {1.213}%
+  \or % 12pt
+    \setstretch {1.241}%
+  \fi
+}
+
+\newcommand{\doublespacing}{%
+  \setstretch {1.667}%  default
+  \ifcase \@ptsize \relax % 10pt
+    \setstretch {1.667}%
+  \or % 11pt
+    \setstretch {1.618}%
+  \or % 12pt
+    \setstretch {1.655}%
+  \fi
+}
+
+
+%%%
+%%% AME:  This is to correct spacing after the tabular env.
+%%% according to the maintainers of setspace
+%%%
+
+\def\@setsize#1#2#3#4{%
+  % Modified 1993.04.07--GDG per KPC
+  \@nomath#1%
+  \let\@currsize#1%
+  \baselineskip #2%
+  \baselineskip \baselinestretch\baselineskip
+  \parskip \baselinestretch\parskip
+  \setbox\strutbox \hbox{%
+    \vrule height.7\baselineskip
+           depth.3\baselineskip
+           width\z@}%
+  \skip\footins \baselinestretch\skip\footins
+  \normalbaselineskip\baselineskip#3#4}
+
+
+%%%
+%%% Adjust the spacing for floats (reset to single space)
+%%%
+
+\let\latex@xfloat=\@xfloat
+\def\@xfloat #1[#2]{%
+  \latex@xfloat #1[#2]%
+  \def\baselinestretch{\setspace@singlespace}%
+  \normalsize
+}
+
+
+%%% 
+%%% Footnotes, AME, did not bring over minipage footnotes
+%%% 
+
+\long\def\@footnotetext#1{%
+  \insert\footins{%
+    \def\baselinestretch {\setspace@singlespace}%
+    \reset@font\footnotesize
+    \interlinepenalty\interfootnotelinepenalty
+    \splittopskip\footnotesep
+    \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+    \hsize\columnwidth
+    \@parboxrestore
+    \protected@edef\@currentlabel{%
+      \csname p@footnote\endcsname\@thefnmark
+    }%
+    \color@begingroup
+      \@makefntext{%
+        \rule\z@\footnotesep\ignorespaces#1\@finalstrut\strutbox}%
+    \color@endgroup}}
+
+%%%
+%%% AME Fix the spacing around display math
+%%%
+\newcommand{\displayskipstretch}{\baselinestretch}
+\newcommand{\setdisplayskipstretch}[1]{\renewcommand{\displayskipstretch}{#1}}
+\everydisplay\expandafter{%
+  \the\everydisplay
+  \abovedisplayskip \displayskipstretch\abovedisplayskip
+  \belowdisplayskip \displayskipstretch\belowdisplayskip
+  \abovedisplayshortskip \displayskipstretch\abovedisplayshortskip
+  \belowdisplayshortskip \displayskipstretch\belowdisplayshortskip
+}
+
+%%%
+%%% AME Modified to use the setspace style commands
+%%% 
+
+\newcommand{\restore@spacing}{%
+    \par
+    \vskip \parskip
+    \vskip \baselineskip
+  \endgroup
+  \vskip -\parskip
+  \vskip -\baselineskip
+}
+
+\newenvironment{spacing}[1]{%
+  \par
+  \begingroup             
+  \setstretch {#1}%
+}{ 
+  \restore@spacing
+}
+
