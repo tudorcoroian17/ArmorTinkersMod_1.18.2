@@ -10,8 +10,7 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks {
-        public static final TagKey<Block> EXAMPLE_TAG_BLOCK
-                = tag("example_tag_block_word");
+        public static final TagKey<Block> MAPLE_LOGS = tag("maple_logs");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(ArmorTinkers.MOD_ID, name));
@@ -23,8 +22,7 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> EXAMPLE_TAG_ITEM
-                = tag("example_tag_item_word");
+        public static final TagKey<Item> MAPLE_LOGS = tag("maple_logs");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(ArmorTinkers.MOD_ID, name));

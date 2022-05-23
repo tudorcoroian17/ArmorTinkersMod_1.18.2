@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "armortinkers:block/stripped_maple_log",
+    "side": "armortinkers:block/stripped_maple_log"
+  }
+}

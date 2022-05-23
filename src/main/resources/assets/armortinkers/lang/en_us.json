@@ -49,6 +49,13 @@
   "block.armortinkers.magnesium_ore": "Magnesium Ore",
   "block.armortinkers.magnesium_deepslate_ore": "Deepslate Magnesium Ore",
   "block.armortinkers.armor_part_maker": "Armor Part Station",
+  "block.armortinkers.maple_log": "Maple Log",
+  "block.armortinkers.maple_wood": "Maple Wood",
+  "block.armortinkers.stripped_maple_log": "Stripped Maple Log",
+  "block.armortinkers.stripped_maple_wood": "Stripped Maple Wood",
+  "block.armortinkers.maple_planks": "Maple Planks",
+  "block.armortinkers.maple_leaves": "Maple Leaves",
+  "block.armortinkers.maple_sapling": "Maple Sapling",
 
 
   "itemGroup.armortinkerstab": "Armor Tinkers",

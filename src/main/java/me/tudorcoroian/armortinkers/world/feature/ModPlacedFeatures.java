@@ -2,6 +2,7 @@ package me.tudorcoroian.armortinkers.world.feature;
 
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
@@ -49,4 +50,13 @@ public class ModPlacedFeatures {
     public static final Holder<PlacedFeature> MAGNESIUM_ORE_UNIFORM = PlacementUtils.register("magnesium_ore_uniform",
             ModConfiguredFeatures.MAGNESIUM_ORE_SMALL, ModOrePlacement.commonOrePlacement(30, // Veins per chunk
                     HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-16), VerticalAnchor.aboveBottom(16))));
+
+
+
+    public static final Holder<PlacedFeature> MAPLE_PLACED =
+            PlacementUtils.register("maple_placed",
+                    ModConfiguredFeatures.MAPLE_SPAWN,
+                    VegetationPlacements.treePlacement(
+                            PlacementUtils.countExtra(1, 0.1f,2))
+                    );
 }

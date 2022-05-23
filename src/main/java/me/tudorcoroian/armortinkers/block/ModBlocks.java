@@ -2,16 +2,20 @@ package me.tudorcoroian.armortinkers.block;
 
 import me.tudorcoroian.armortinkers.ArmorTinkers;
 import me.tudorcoroian.armortinkers.block.custom.ArmorPartMakerBlock;
+import me.tudorcoroian.armortinkers.block.custom.ModFlammableRotatedPillarBlock;
 import me.tudorcoroian.armortinkers.item.ModCreativeModeTab;
 import me.tudorcoroian.armortinkers.item.ModItems;
+import me.tudorcoroian.armortinkers.world.feature.tree.MapleTreeGrower;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.OreBlock;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -109,6 +113,56 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ARMOR_PART_MAKER = registerBlock("armor_part_maker",
             () -> new ArmorPartMakerBlock(BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE).noOcclusion()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+
+    public static final RegistryObject<Block> MAPLE_LOG = registerBlock("maple_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_LOG).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> MAPLE_WOOD = registerBlock("maple_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_WOOD).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> STRIPPED_MAPLE_LOG = registerBlock("stripped_maple_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_SPRUCE_LOG).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> STRIPPED_MAPLE_WOOD = registerBlock("stripped_maple_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_SPRUCE_WOOD).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> MAPLE_PLANKS = registerBlock("maple_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).requiresCorrectToolForDrops()){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            },
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> MAPLE_LEAVES = registerBlock("maple_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_LEAVES)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            },
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> MAPLE_SAPLING = registerBlock("maple_sapling",
+            () -> new SaplingBlock(new MapleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.SPRUCE_SAPLING)),
             ModCreativeModeTab.ARMOR_TINKERS_TAB);
 
     // Register the block created in this class

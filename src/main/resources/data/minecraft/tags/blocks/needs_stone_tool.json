@@ -13,6 +13,9 @@
     "armortinkers:aluminium_deepslate_ore",
     "armortinkers:tin_deepslate_ore",
     "armortinkers:zinc_deepslate_ore",
-    "armortinkers:magnesium_deepslate_ore"
+    "armortinkers:magnesium_deepslate_ore",
+    "armortinkers:armor_part_maker",
+
+    "armortinkers:maple_planks"
   ]
 }

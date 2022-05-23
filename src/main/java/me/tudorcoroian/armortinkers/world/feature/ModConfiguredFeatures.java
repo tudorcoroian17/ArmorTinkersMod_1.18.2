@@ -4,13 +4,27 @@ import me.tudorcoroian.armortinkers.block.ModBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.features.OreFeatures;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.SpruceFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
+    /**
+     * Ores configured features
+     **/
     public static final List<OreConfiguration.TargetBlockState> OVERWORLD_ALUMINIUM_ORES = List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.ALUMINIUM_ORE.get().defaultBlockState()),
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.ALUMINIUM_DEEPSLATE_ORE.get().defaultBlockState())
@@ -60,4 +74,26 @@ public class ModConfiguredFeatures {
             Feature.ORE, new OreConfiguration(OVERWORLD_MAGNESIUM_ORES, 8 /*Blocks per vein*/));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> MAGNESIUM_ORE_LARGE = FeatureUtils.register("magnesium_ore_large",
             Feature.ORE, new OreConfiguration(OVERWORLD_MAGNESIUM_ORES, 10 /*Blocks per vein*/));
+
+    /**
+     * Tree configured features
+     **/
+    public static final Holder<? extends ConfiguredFeature<TreeConfiguration, ?>> MAPLE_TREE =
+            FeatureUtils.register("maple", Feature.TREE,
+                    new TreeConfiguration.TreeConfigurationBuilder(
+                            BlockStateProvider.simple(ModBlocks.MAPLE_LOG.get()),
+                            new StraightTrunkPlacer(7, 9, 3),
+                            BlockStateProvider.simple(ModBlocks.MAPLE_LEAVES.get()),
+                            new SpruceFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(4)),
+                            new TwoLayersFeatureSize(1, 0, 2)).build());
+    public static final Holder<PlacedFeature> MAPLE_CHECKED = PlacementUtils.register("maple_checked",
+            MAPLE_TREE, PlacementUtils.filteredByBlockSurvival(ModBlocks.MAPLE_SAPLING.get()));
+
+
+    public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> MAPLE_SPAWN =
+            FeatureUtils.register("maple_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(MAPLE_CHECKED, 0.5F)), MAPLE_CHECKED));
+
+
+
 }

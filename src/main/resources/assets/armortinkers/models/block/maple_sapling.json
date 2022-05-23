@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross" : "armortinkers:block/maple_sapling"
+  }
+}

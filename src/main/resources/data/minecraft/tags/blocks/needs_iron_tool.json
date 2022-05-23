@@ -7,6 +7,8 @@
     "armortinkers:lead_ore",
     "armortinkers:silver_ore",
     "armortinkers:lead_deepslate_ore",
-    "armortinkers:silver_deepslate_ore"
+    "armortinkers:silver_deepslate_ore",
+
+    "#armortinkers:maple_logs"
   ]
 }

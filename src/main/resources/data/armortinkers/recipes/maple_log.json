@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "armortinkers:maple_wood"
+    }
+  },
+  "result": {
+    "item": "armortinkers:maple_log",
+    "count": 4
+  }
+}
