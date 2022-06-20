@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "armortinkers:item/blank_pattern_gold",
+    "layer1": "armortinkers:overlay/front_plate_overlay"
+  }
+}

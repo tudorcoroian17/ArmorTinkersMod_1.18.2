@@ -29,6 +29,24 @@
   "item.armortinkers.resin": "Resin",
   "item.armortinkers.stone_hammer": "Stone Hammer",
   "item.armortinkers.iron_hammer": "Iron Hammer",
+  "item.armortinkers.blank_wood_pattern": "Blank Wooden Pattern",
+  "item.armortinkers.blank_gold_pattern": "Blank Golden Pattern",
+  "item.armortinkers.head_plate_wood_pattern": "Head Plate Wooden Pattern",
+  "item.armortinkers.head_plate_gold_pattern": "Head Plate Golden Pattern",
+  "item.armortinkers.shoulder_plate_wood_pattern": "Shoulder Plate Wooden Pattern",
+  "item.armortinkers.shoulder_plate_gold_pattern": "Shoulder Plate Golden Pattern",
+  "item.armortinkers.front_plate_wood_pattern": "Front Plate Wooden Pattern",
+  "item.armortinkers.front_plate_gold_pattern": "Front Plate Golden Pattern",
+  "item.armortinkers.back_plate_wood_pattern": "Back Plate Wooden Pattern",
+  "item.armortinkers.back_plate_gold_pattern": "Back Plate Golden Pattern",
+  "item.armortinkers.wrist_band_wood_pattern": "Wrist Band Wooden Pattern",
+  "item.armortinkers.wrist_band_gold_pattern": "Wrist Band Golden Pattern",
+  "item.armortinkers.leg_plate_wood_pattern": "Leg Plate Wooden Pattern",
+  "item.armortinkers.leg_plate_gold_pattern": "Leg Plate Golden Pattern",
+  "item.armortinkers.tail_plate_wood_pattern": "Tail Plate Wooden Pattern",
+  "item.armortinkers.tail_plate_gold_pattern": "Tail Plate Golden Pattern",
+  "item.armortinkers.boot_plate_wood_pattern": "Boot Plate Wooden Pattern",
+  "item.armortinkers.boot_plate_gold_pattern": "Boot Plate Golden Pattern",
 
   "block.armortinkers.aluminium_block" : "Aluminium Block",
   "block.armortinkers.tin_block" : "Tin Block",
@@ -61,6 +79,7 @@
 
 
   "itemGroup.armortinkerstab": "Armor Tinkers",
+  "itemGroup.patterntab": "Patterns",
 
   "tooltip.armortinkers.hide_armour.tooltip": "§8§oUnwearable",
 

@@ -110,6 +110,42 @@ public class ModItems {
     public static final RegistryObject<Item> IRON_HAMMER = ITEMS.register("iron_hammer",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB)));
 
+    public static final RegistryObject<Item> BLANK_WOOD_PATTERN = ITEMS.register("blank_wood_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> HEAD_PLATE_WOOD_PATTERN = ITEMS.register("head_plate_wood_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> SHOULDER_PLATE_WOOD_PATTERN = ITEMS.register("shoulder_plate_wood_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> FRONT_PLATE_WOOD_PATTERN = ITEMS.register("front_plate_wood_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> BACK_PLATE_WOOD_PATTERN = ITEMS.register("back_plate_wood_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> WRIST_BAND_WOOD_PATTERN = ITEMS.register("wrist_band_wood_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> LEG_PLATE_WOOD_PATTERN = ITEMS.register("leg_plate_wood_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> TAIL_PLATE_WOOD_PATTERN = ITEMS.register("tail_plate_wood_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> BOOT_PLATE_WOOD_PATTERN = ITEMS.register("boot_plate_wood_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> BLANK_GOLD_PATTERN = ITEMS.register("blank_gold_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> HEAD_PLATE_GOLD_PATTERN = ITEMS.register("head_plate_gold_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> SHOULDER_PLATE_GOLD_PATTERN = ITEMS.register("shoulder_plate_gold_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> FRONT_PLATE_GOLD_PATTERN = ITEMS.register("front_plate_gold_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> BACK_PLATE_GOLD_PATTERN = ITEMS.register("back_plate_gold_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> WRIST_BAND_GOLD_PATTERN = ITEMS.register("wrist_band_gold_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> LEG_PLATE_GOLD_PATTERN = ITEMS.register("leg_plate_gold_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> TAIL_PLATE_GOLD_PATTERN = ITEMS.register("tail_plate_gold_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+    public static final RegistryObject<Item> BOOT_PLATE_GOLD_PATTERN = ITEMS.register("boot_plate_gold_pattern",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
 
     // Register all the items in the list
     public static void register(IEventBus eventBus) {
