@@ -27,6 +27,8 @@
   "item.armortinkers.hide_pants": "Hide Pants",
   "item.armortinkers.hide_socks": "Hide Socks",
   "item.armortinkers.resin": "Resin",
+  "item.armortinkers.stone_hammer": "Stone Hammer",
+  "item.armortinkers.iron_hammer": "Iron Hammer",
 
   "block.armortinkers.aluminium_block" : "Aluminium Block",
   "block.armortinkers.tin_block" : "Tin Block",
@@ -60,5 +62,7 @@
 
   "itemGroup.armortinkerstab": "Armor Tinkers",
 
-  "tooltip.armortinkers.hide_armour.tooltip": "§8§oUnwearable"
+  "tooltip.armortinkers.hide_armour.tooltip": "§8§oUnwearable",
+
+  "blockentity.armortinkers.armor_part_maker_be": "Armor Part Station"
 }

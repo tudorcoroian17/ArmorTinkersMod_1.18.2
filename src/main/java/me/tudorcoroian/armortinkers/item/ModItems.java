@@ -2,6 +2,7 @@ package me.tudorcoroian.armortinkers.item;
 
 import me.tudorcoroian.armortinkers.ArmorTinkers;
 import me.tudorcoroian.armortinkers.item.custom.ResinItem;
+import me.tudorcoroian.armortinkers.recipe.ModRecipes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.Item;
@@ -103,6 +104,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> RESIN = ITEMS.register("resin",
             ()-> new ResinItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB)));
+
+    public static final RegistryObject<Item> STONE_HAMMER = ITEMS.register("stone_hammer",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB)));
+    public static final RegistryObject<Item> IRON_HAMMER = ITEMS.register("iron_hammer",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB)));
 
 
     // Register all the items in the list

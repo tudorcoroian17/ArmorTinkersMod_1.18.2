@@ -1,0 +1,135 @@
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "Worker-Bootstrap-3"
+Exception in thread "Thread-0" [23:26:50] [IO-Worker-11/ERROR] [minecraft/Util]: Caught exception in thread Thread[IO-Worker-11,10,main]
+java.lang.OutOfMemoryError: Java heap space
+[23:26:50] [IO-Worker-18/ERROR] [minecraft/Util]: Caught exception in thread Thread[IO-Worker-18,10,main]
+java.lang.OutOfMemoryError: Java heap space
+[23:26:50] [Server thread/ERROR] [minecraft/MinecraftServer]: Encountered an unexpected exception
+java.lang.OutOfMemoryError: Java heap space
+java.lang.OutOfMemoryError: Java heap space
+[23:26:50] [Server thread/DEBUG] [os.ut.FileUtil/]: No oshi.architecture.properties file found from ClassLoader cpw.mods.modlauncher.TransformingClassLoader@1aabf50d
+[23:26:50] [Server thread/FATAL] [ne.mi.co.ForgeMod/]: Preparing crash report with UUID bb7dd170-19ee-487e-8e41-597bc9f88ab6
+[23:26:50] [Server thread/ERROR] [minecraft/MinecraftServer]: This crash report has been saved to: C:\Users\tudor\Tudor\010_MCM_MinecraftMod\ArmorTinkersMod_1.18.2\run\.\crash-reports\crash-2022-05-26_23.26.50-server.txt
+[23:26:50] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[23:26:50] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[23:26:50] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Dev lost connection: Disconnected
+[23:26:50] [Server thread/INFO] [minecraft/MinecraftServer]: Dev left the game
+[23:26:50] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Stopping singleplayer server as player logged out
+[23:26:50] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[23:26:53] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[TestTreeGeneration]'/minecraft:overworld
+[23:26:54] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[TestTreeGeneration]'/minecraft:the_end
+[23:26:54] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[TestTreeGeneration]'/minecraft:the_nether
+[23:26:54] [Server thread/DEBUG] [ne.mi.co.ForgeHooks/WP]: Gathering id map for writing to world save TestTreeGeneration
+[23:26:54] [Server thread/DEBUG] [ne.mi.co.ForgeHooks/WP]: ID Map collection complete TestTreeGeneration
+[23:26:54] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (TestTreeGeneration): All chunks are saved
+[23:26:54] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:26:54] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:26:54] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23:26:55] [Server thread/DEBUG] [ne.mi.fm.lo.FileUtils/CORE]: Found existing serverconfig directory : .\saves\TestTreeGeneration\serverconfig
+[23:26:55] [Server thread/DEBUG] [ne.mi.fm.co.ConfigTracker/CONFIG]: Unloading configs type SERVER
+[23:26:55] [Render thread/INFO] [me.je.fo.st.StartEventObserver/]: JEI StartEventObserver received class net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggedOutEvent
+[23:26:55] [Render thread/INFO] [me.je.fo.st.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to DISABLED
+[23:26:55] [Render thread/INFO] [me.je.fo.st.ClientLifecycleHandler/]: Stopping JEI
+[23:26:56] [Render thread/ERROR] [minecraft/Minecraft]: Out of memory
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.ArrayList.iterator(ArrayList.java:947) ~[?:?] {}
+	at net.minecraft.client.renderer.texture.TextureAtlas.cycleAnimationFrames(TextureAtlas.java:271) ~[forge-1.18.2-40.1.0_mapped_parchment_2022.05.02-1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.texture.TextureAtlas.tick(TextureAtlas.java:281) ~[forge-1.18.2-40.1.0_mapped_parchment_2022.05.02-1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.texture.TextureManager.tick(TextureManager.java:162) ~[forge-1.18.2-40.1.0_mapped_parchment_2022.05.02-1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.tick(Minecraft.java:1675) ~[forge-1.18.2-40.1.0_mapped_parchment_2022.05.02-1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1045) ~[forge-1.18.2-40.1.0_mapped_parchment_2022.05.02-1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:668) [forge-1.18.2-40.1.0_mapped_parchment_2022.05.02-1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:205) [forge-1.18.2-40.1.0_mapped_parchment_2022.05.02-1.18.2-recomp.jar%2376!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.lambda$launchService$0(ForgeClientUserdevLaunchHandler.java:24) [fmlloader-1.18.2-40.1.0.jar%230!/:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler$$Lambda$763/0x0000000800f7c7b0.call(Unknown Source) [fmlloader-1.18.2-40.1.0.jar%230!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.3.jar%2310!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.3.jar%2310!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.3.jar%2310!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.3.jar%2310!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.3.jar%2310!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.3.jar%2310!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.3.jar%2310!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 5/26/22, 11:26 PM
+Description: Exception in server tick loop
+
+java.lang.OutOfMemoryError: Java heap space
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.2
+	Minecraft Version ID: 1.18.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 1265077336 bytes (1206 MiB) / 1803550720 bytes (1720 MiB) up to 2109734912 bytes (2012 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+	Identifier: Intel64 Family 6 Model 142 Stepping 11
+	Microarchitecture: whiskey Lake
+	Frequency (GHz): 1.80
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: Intel(R) UHD Graphics 620
+	Graphics card #0 vendor: Intel Corporation (0x8086)
+	Graphics card #0 VRAM (MB): 1024.00
+	Graphics card #0 deviceId: 0x3ea0
+	Graphics card #0 versionInfo: DriverVersion=27.20.100.8681
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 2.40
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 19491.47
+	Virtual memory used (MB): 15941.89
+	Swap memory total (MB): 11447.79
+	Swap memory used (MB): 2643.36
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/72, l='ServerLevel[TestTreeGeneration]', x=-840.70, y=71.00, z=-65.70]]
+	Data Packs: vanilla (incompatible), mod:theoneprobe (incompatible), mod:forge (incompatible), mod:armortinkers, mod:jei (incompatible)
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	ModLauncher: 9.1.3+9.1.3+main.9b69c82a
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		 mixin PLUGINSERVICE 
+		 eventbus PLUGINSERVICE 
+		 slf4jfixer PLUGINSERVICE 
+		 object_holder_definalize PLUGINSERVICE 
+		 runtime_enum_extender PLUGINSERVICE 
+		 capability_token_subclass PLUGINSERVICE 
+		 accesstransformer PLUGINSERVICE 
+		 runtimedistcleaner PLUGINSERVICE 
+		 mixin TRANSFORMATIONSERVICE 
+		 fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		javafml@null
+	Mod List: 
+		forge-1.18.2-40.1.0_mapped_parchment_2022.05.02-1.|Minecraft                     |minecraft                     |1.18.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		the-one-probe-245211-3671753_mapped_parchment_2022|The One Probe                 |theoneprobe                   |1.18-5.1.0          |DONE      |Manifest: NOSIGNATURE
+		                                                  |Forge                         |forge                         |40.1.0              |DONE      |Manifest: NOSIGNATURE
+		main                                              |Armor Tinkers                 |armortinkers                  |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		jei-1.18.2-9.7.0.192_mapped_parchment_2022.05.02-1|Just Enough Items             |jei                           |9.7.0.192           |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: bf896aba-e7a8-433c-8034-567589318bcd
+	FML: 40.1
+	Forge: net.minecraftforge:40.1.0
+#@!@# Game crashed! Crash report saved to: #@!@# .\crash-reports\crash-2022-05-26_23.26.50-server.txt
+AL lib: (EE) alc_cleanup: 1 device not closed

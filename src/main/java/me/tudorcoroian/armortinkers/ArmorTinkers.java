@@ -2,7 +2,12 @@ package me.tudorcoroian.armortinkers;
 
 import com.mojang.logging.LogUtils;
 import me.tudorcoroian.armortinkers.block.ModBlocks;
+import me.tudorcoroian.armortinkers.block.entity.ModBlockEntities;
 import me.tudorcoroian.armortinkers.item.ModItems;
+import me.tudorcoroian.armortinkers.recipe.ModRecipes;
+import me.tudorcoroian.armortinkers.screen.ArmorPartMakerScreen;
+import me.tudorcoroian.armortinkers.screen.ModMenuTypes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
@@ -33,10 +38,13 @@ public class ArmorTinkers {
     public ArmorTinkers() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Register the items added by the mod
         ModItems.register(eventBus);
-        // Register the blocks added by the mod
         ModBlocks.register(eventBus);
+
+        ModBlockEntities.register(eventBus);
+        ModMenuTypes.register(eventBus);
+
+        ModRecipes.register(eventBus);
 
         // Register the setup method for modloading
         eventBus.addListener(this::setup);
@@ -57,5 +65,7 @@ public class ArmorTinkers {
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.MAPLE_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.MAPLE_SAPLING.get(), RenderType.cutout());
+
+        MenuScreens.register(ModMenuTypes.ARMOR_PART_MAKER_MENU.get(), ArmorPartMakerScreen::new);
     }
 }
