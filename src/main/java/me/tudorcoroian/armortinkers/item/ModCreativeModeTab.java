@@ -18,4 +18,10 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.BLANK_WOOD_PATTERN.get());
         }
     };
+    public static final CreativeModeTab ARMOR_PART_TAB = new CreativeModeTab("armorparttab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.MAGNESIUM_HEAD_PLATE.get());
+        }
+    };
 }

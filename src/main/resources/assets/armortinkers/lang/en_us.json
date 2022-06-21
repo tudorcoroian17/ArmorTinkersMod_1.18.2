@@ -29,6 +29,7 @@
   "item.armortinkers.resin": "Resin",
   "item.armortinkers.stone_hammer": "Stone Hammer",
   "item.armortinkers.iron_hammer": "Iron Hammer",
+
   "item.armortinkers.blank_wood_pattern": "Blank Wooden Pattern",
   "item.armortinkers.blank_gold_pattern": "Blank Golden Pattern",
   "item.armortinkers.head_plate_wood_pattern": "Head Plate Wooden Pattern",
@@ -47,6 +48,15 @@
   "item.armortinkers.tail_plate_gold_pattern": "Tail Plate Golden Pattern",
   "item.armortinkers.boot_plate_wood_pattern": "Boot Plate Wooden Pattern",
   "item.armortinkers.boot_plate_gold_pattern": "Boot Plate Golden Pattern",
+
+  "item.armortinkers.magnesium_head_plate": "Magnesium Head Plate",
+  "item.armortinkers.magnesium_back_plate": "Magnesium Back Plate",
+  "item.armortinkers.magnesium_front_plate": "Magnesium Front Plate",
+  "item.armortinkers.magnesium_shoulder_plate": "Magnesium Shoulder Plate",
+  "item.armortinkers.magnesium_wrist_band": "Magnesium Wrist Band",
+  "item.armortinkers.magnesium_leg_plate": "Magnesium Leg Plate",
+  "item.armortinkers.magnesium_tail_plate": "Magnesium Tail Plate",
+  "item.armortinkers.magnesium_boot_plate": "Magnesium Boot Plate",
 
   "block.armortinkers.aluminium_block" : "Aluminium Block",
   "block.armortinkers.tin_block" : "Tin Block",
@@ -80,6 +90,7 @@
 
   "itemGroup.armortinkerstab": "Armor Tinkers",
   "itemGroup.patterntab": "Patterns",
+  "itemGroup.armorparttab": "Armor Parts",
 
   "tooltip.armortinkers.hide_armour.tooltip": "§8§oUnwearable",
 

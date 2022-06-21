@@ -1,8 +1,11 @@
 package me.tudorcoroian.armortinkers.item;
 
 import me.tudorcoroian.armortinkers.ArmorTinkers;
+import me.tudorcoroian.armortinkers.item.custom.ArmorPartItem;
 import me.tudorcoroian.armortinkers.item.custom.ResinItem;
 import me.tudorcoroian.armortinkers.recipe.ModRecipes;
+import me.tudorcoroian.armortinkers.util.ModColors;
+import me.tudorcoroian.armortinkers.util.ModMaterial;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.Item;
@@ -146,6 +149,32 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
     public static final RegistryObject<Item> BOOT_PLATE_GOLD_PATTERN = ITEMS.register("boot_plate_gold_pattern",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
+
+    public static final RegistryObject<Item> MAGNESIUM_HEAD_PLATE = ITEMS.register("magnesium_head_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.MAGNESIUM, ModMaterial.MAGNESIUM));
+    public static final RegistryObject<Item> MAGNESIUM_BACK_PLATE = ITEMS.register("magnesium_back_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.MAGNESIUM, ModMaterial.MAGNESIUM));
+    public static final RegistryObject<Item> MAGNESIUM_FRONT_PLATE = ITEMS.register("magnesium_front_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.MAGNESIUM, ModMaterial.MAGNESIUM));
+    public static final RegistryObject<Item> MAGNESIUM_SHOULDER_PLATE = ITEMS.register("magnesium_shoulder_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.MAGNESIUM, ModMaterial.MAGNESIUM));
+    public static final RegistryObject<Item> MAGNESIUM_WRIST_BAND = ITEMS.register("magnesium_wrist_band",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.MAGNESIUM, ModMaterial.MAGNESIUM));
+    public static final RegistryObject<Item> MAGNESIUM_LEG_PLATE = ITEMS.register("magnesium_leg_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.MAGNESIUM, ModMaterial.MAGNESIUM));
+    public static final RegistryObject<Item> MAGNESIUM_TAIL_PLATE = ITEMS.register("magnesium_tail_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.MAGNESIUM, ModMaterial.MAGNESIUM));
+    public static final RegistryObject<Item> MAGNESIUM_BOOT_PLATE = ITEMS.register("magnesium_boot_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.MAGNESIUM, ModMaterial.MAGNESIUM));
+
 
     // Register all the items in the list
     public static void register(IEventBus eventBus) {
