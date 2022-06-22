@@ -176,7 +176,6 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
         if (match.isPresent()) {
             entity.itemHandler.setStackInSlot(3, new ItemStack(match.get().getResultItem().getItem(), 1));
         }
-//        entity.itemHandler.setStackInSlot(3, new ItemStack(ModItems.BRONZE_INGOT.get(), 1));
     }
 
     private static boolean hasRecipe(ArmorPartMakerBlockEntity entity) {
@@ -191,14 +190,6 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
                 .getRecipeFor(ArmorPartTinkeringRecipe.Type.INSTANCE, inventory, level);
 
         return match.isPresent() && canInsertItemIntoOutputSlot(inventory);
-//        if (entity.itemHandler.getStackInSlot(0).getItem() == ModItems.ALUMINIUM_INGOT.get()) {
-//            if (entity.itemHandler.getStackInSlot(1).getItem() == ModItems.MAGNESIUM_INGOT.get()) {
-//                if (entity.itemHandler.getStackInSlot(2).getItem() == ModItems.ZINC_INGOT.get()) {
-//                    return entity.itemHandler.getStackInSlot(3) == ItemStack.EMPTY;
-//                }
-//            }
-//        }
-//        return false;
     }
 
     private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory) {
