@@ -150,6 +150,31 @@ public class ModItems {
     public static final RegistryObject<Item> BOOT_PLATE_GOLD_PATTERN = ITEMS.register("boot_plate_gold_pattern",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PATTERN_TAB)));
 
+    public static final RegistryObject<Item> WOOD_HEAD_PLATE = ITEMS.register("wood_head_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.WOOD, ModMaterial.WOOD));
+    public static final RegistryObject<Item> WOOD_BACK_PLATE = ITEMS.register("wood_back_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.WOOD, ModMaterial.WOOD));
+    public static final RegistryObject<Item> WOOD_FRONT_PLATE = ITEMS.register("wood_front_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.WOOD, ModMaterial.WOOD));
+    public static final RegistryObject<Item> WOOD_SHOULDER_PLATE = ITEMS.register("wood_shoulder_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.WOOD, ModMaterial.WOOD));
+    public static final RegistryObject<Item> WOOD_WRIST_BAND = ITEMS.register("wood_wrist_band",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.WOOD, ModMaterial.WOOD));
+    public static final RegistryObject<Item> WOOD_LEG_PLATE = ITEMS.register("wood_leg_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.WOOD, ModMaterial.WOOD));
+    public static final RegistryObject<Item> WOOD_TAIL_PLATE = ITEMS.register("wood_tail_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.WOOD, ModMaterial.WOOD));
+    public static final RegistryObject<Item> WOOD_BOOT_PLATE = ITEMS.register("wood_boot_plate",
+            () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
+                    ModColors.WOOD, ModMaterial.WOOD));
+
     public static final RegistryObject<Item> MAGNESIUM_HEAD_PLATE = ITEMS.register("magnesium_head_plate",
             () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
                     ModColors.MAGNESIUM, ModMaterial.MAGNESIUM));
