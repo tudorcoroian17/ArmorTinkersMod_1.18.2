@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "armortinkers:copper_head_plate"
+    ]
+  },
+  "criteria": {
+    "has_head_plate_gold_pattern": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armortinkers:head_plate_gold_pattern"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "armortinkers:copper_head_plate"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_head_plate_gold_pattern",
+      "has_the_recipe"
+    ]
+  ]
+}

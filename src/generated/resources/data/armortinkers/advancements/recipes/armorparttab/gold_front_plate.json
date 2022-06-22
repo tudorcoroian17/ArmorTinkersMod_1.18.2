@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "armortinkers:gold_front_plate"
+    ]
+  },
+  "criteria": {
+    "has_front_plate_gold_pattern": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armortinkers:front_plate_gold_pattern"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "armortinkers:gold_front_plate"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_front_plate_gold_pattern",
+      "has_the_recipe"
+    ]
+  ]
+}

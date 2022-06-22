@@ -1,0 +1,17 @@
+{
+  "type": "armortinkers:armor_part_tinkering",
+  "ingredients": [
+    {
+      "item": "armortinkers:iron_hammer"
+    },
+    {
+      "item": "armortinkers:magnesium_ingot"
+    },
+    {
+      "item": "armortinkers:boot_plate_gold_pattern"
+    }
+  ],
+  "output": {
+    "item": "armortinkers:magnesium_boot_plate"
+  }
+}

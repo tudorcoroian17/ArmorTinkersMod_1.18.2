@@ -1,0 +1,17 @@
+{
+  "type": "armortinkers:armor_part_tinkering",
+  "ingredients": [
+    {
+      "item": "armortinkers:stone_hammer"
+    },
+    {
+      "item": "minecraft:cactus"
+    },
+    {
+      "item": "armortinkers:front_plate_wood_pattern"
+    }
+  ],
+  "output": {
+    "item": "armortinkers:cactus_front_plate"
+  }
+}

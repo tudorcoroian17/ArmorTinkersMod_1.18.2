@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "armortinkers:stone_leg_plate"
+    ]
+  },
+  "criteria": {
+    "has_leg_plate_wood_pattern": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armortinkers:leg_plate_wood_pattern"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "armortinkers:stone_leg_plate"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_leg_plate_wood_pattern",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "armortinkers:armor_part_tinkering",
+  "ingredients": [
+    {
+      "item": "armortinkers:iron_hammer"
+    },
+    {
+      "item": "armortinkers:adamantium_ingot"
+    },
+    {
+      "item": "armortinkers:front_plate_gold_pattern"
+    }
+  ],
+  "output": {
+    "item": "armortinkers:adamantium_front_plate"
+  }
+}

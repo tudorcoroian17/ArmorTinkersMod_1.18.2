@@ -1,0 +1,17 @@
+{
+  "type": "armortinkers:armor_part_tinkering",
+  "ingredients": [
+    {
+      "item": "armortinkers:iron_hammer"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "armortinkers:leg_plate_gold_pattern"
+    }
+  ],
+  "output": {
+    "item": "armortinkers:obsidian_leg_plate"
+  }
+}

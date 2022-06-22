@@ -1,0 +1,17 @@
+{
+  "type": "armortinkers:armor_part_tinkering",
+  "ingredients": [
+    {
+      "item": "armortinkers:stone_hammer"
+    },
+    {
+      "item": "minecraft:flint"
+    },
+    {
+      "item": "armortinkers:wrist_band_wood_pattern"
+    }
+  ],
+  "output": {
+    "item": "armortinkers:flint_wrist_band"
+  }
+}

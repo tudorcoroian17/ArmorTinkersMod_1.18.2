@@ -1,0 +1,17 @@
+{
+  "type": "armortinkers:armor_part_tinkering",
+  "ingredients": [
+    {
+      "item": "armortinkers:iron_hammer"
+    },
+    {
+      "item": "armortinkers:vibranium_ingot"
+    },
+    {
+      "item": "armortinkers:head_plate_gold_pattern"
+    }
+  ],
+  "output": {
+    "item": "armortinkers:vibranium_head_plate"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "armortinkers:netherack_tail_plate"
+    ]
+  },
+  "criteria": {
+    "has_tail_plate_wood_pattern": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armortinkers:tail_plate_wood_pattern"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "armortinkers:netherack_tail_plate"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_tail_plate_wood_pattern",
+      "has_the_recipe"
+    ]
+  ]
+}
