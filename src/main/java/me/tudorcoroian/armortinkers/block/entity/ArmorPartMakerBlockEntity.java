@@ -147,14 +147,12 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
 
     private static void extractIngredients(ArmorPartMakerBlockEntity entity) {
         int hammerDamage =entity.itemHandler.getStackInSlot(0).getDamageValue();
-        LOGGER.info("Hammer damage " + hammerDamage);
         entity.itemHandler.getStackInSlot(0).setDamageValue(hammerDamage + 1);
         if (isDurabilityZero(entity.itemHandler.getStackInSlot(0))) {
             entity.itemHandler.extractItem(0, 1, false);
         }
 
         int patternDamage = entity.itemHandler.getStackInSlot(2).getDamageValue();
-        LOGGER.info("Pattern damage " + patternDamage);
         entity.itemHandler.getStackInSlot(2).setDamageValue(patternDamage + 1);
         if (isDurabilityZero(entity.itemHandler.getStackInSlot(2))) {
             entity.itemHandler.extractItem(2, 1, false);
@@ -212,7 +210,7 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
     }
 
     public static boolean isDurabilityZero(ItemStack itemStack) {
-        if (itemStack.getDamageValue() == itemStack.getMaxDamage()) {
+        if (itemStack.getDamageValue() >= itemStack.getMaxDamage()) {
             return true;
         }
         return false;
