@@ -1,5 +1,6 @@
 package me.tudorcoroian.armortinkers.screen.slot;
 
+import me.tudorcoroian.armortinkers.item.ModItems;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
@@ -21,6 +22,7 @@ public class ModHammerSlot extends SlotItemHandler {
     }
 
     private static boolean isHammer(ItemStack itemStack) {
-        return true;
+        return itemStack.is(ModItems.STONE_HAMMER.get()) ||
+                itemStack.is(ModItems.IRON_HAMMER.get());
     }
 }

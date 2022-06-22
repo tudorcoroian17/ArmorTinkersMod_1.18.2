@@ -2,6 +2,7 @@ package me.tudorcoroian.armortinkers.recipe;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.mojang.logging.LogUtils;
 import me.tudorcoroian.armortinkers.ArmorTinkers;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.FriendlyByteBuf;
@@ -13,16 +14,16 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-public class ArmorPartMakerRecipe implements Recipe<SimpleContainer> {
+public class ArmorPartTinkeringRecipe implements Recipe<SimpleContainer> {
 
     private final ResourceLocation id;
     private final ItemStack output;
     private final NonNullList<Ingredient> recipeItems;
 
-    public ArmorPartMakerRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> recipeItems) {
+    public ArmorPartTinkeringRecipe(ResourceLocation id, ItemStack output, NonNullList<Ingredient> recipeItems) {
         this.id = id;
-        this.output = output;
         this.recipeItems = recipeItems;
+        this.output = output;
     }
 
     @Override
@@ -57,26 +58,26 @@ public class ArmorPartMakerRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return null;
+        return Serializer.INSTANCE;
     }
 
     @Override
     public RecipeType<?> getType() {
-        return null;
+        return Type.INSTANCE;
     }
 
-    public static class Type implements RecipeType<ArmorPartMakerRecipe> {
+    public static class Type implements RecipeType<ArmorPartTinkeringRecipe> {
         private Type() {  }
         public static final Type INSTANCE = new Type();
-        public static final String ID = "armor_part_crafting";
+        public static final String ID = "armor_part_tinkering";
     }
 
-    public static class Serializer implements RecipeSerializer<ArmorPartMakerRecipe> {
+    public static class Serializer implements RecipeSerializer<ArmorPartTinkeringRecipe> {
         public static final Serializer INSTANCE = new Serializer();
-        public static final ResourceLocation ID = new ResourceLocation(ArmorTinkers.MOD_ID, "armor_part_crafting");
+        public static final ResourceLocation ID = new ResourceLocation(ArmorTinkers.MOD_ID, "armor_part_tinkering");
 
         @Override
-        public ArmorPartMakerRecipe fromJson(ResourceLocation id, JsonObject json) {
+        public ArmorPartTinkeringRecipe fromJson(ResourceLocation id, JsonObject json) {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "output"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(json, "ingredients");
@@ -86,11 +87,11 @@ public class ArmorPartMakerRecipe implements Recipe<SimpleContainer> {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new ArmorPartMakerRecipe(id, output, inputs);
+            return new ArmorPartTinkeringRecipe(id, output, inputs);
         }
 
         @Override
-        public ArmorPartMakerRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
+        public ArmorPartTinkeringRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf buf) {
             NonNullList<Ingredient> inputs = NonNullList.withSize(buf.readInt(), Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
@@ -98,11 +99,11 @@ public class ArmorPartMakerRecipe implements Recipe<SimpleContainer> {
             }
 
             ItemStack output = buf.readItem();
-            return new ArmorPartMakerRecipe(id, output, inputs);
+            return new ArmorPartTinkeringRecipe(id, output, inputs);
         }
 
         @Override
-        public void toNetwork(FriendlyByteBuf buf, ArmorPartMakerRecipe recipe) {
+        public void toNetwork(FriendlyByteBuf buf, ArmorPartTinkeringRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
             for (Ingredient ing : recipe.getIngredients()) {
                 ing.toNetwork(buf);

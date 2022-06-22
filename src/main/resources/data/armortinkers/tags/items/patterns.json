@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:head_plate_wood_pattern",
+    "armortinkers:front_plate_wood_pattern",
+    "armortinkers:back_plate_wood_pattern",
+    "armortinkers:shoulder_plate_wood_pattern",
+    "armortinkers:wrist_band_wood_pattern",
+    "armortinkers:leg_plate_wood_pattern",
+    "armortinkers:tail_plate_wood_pattern",
+    "armortinkers:boot_plate_wood_pattern",
+    "armortinkers:head_plate_gold_pattern",
+    "armortinkers:front_plate_gold_pattern",
+    "armortinkers:back_plate_gold_pattern",
+    "armortinkers:shoulder_plate_gold_pattern",
+    "armortinkers:wrist_band_gold_pattern",
+    "armortinkers:leg_plate_gold_pattern",
+    "armortinkers:tail_plate_gold_pattern",
+    "armortinkers:boot_plate_gold_pattern"
+  ]
+}

@@ -1,15 +1,13 @@
 package me.tudorcoroian.armortinkers.block.entity;
 
 import com.mojang.logging.LogUtils;
-import me.tudorcoroian.armortinkers.ArmorTinkers;
 import me.tudorcoroian.armortinkers.item.ModItems;
-import me.tudorcoroian.armortinkers.recipe.ArmorPartMakerRecipe;
+import me.tudorcoroian.armortinkers.recipe.ArmorPartTinkeringRecipe;
 import me.tudorcoroian.armortinkers.screen.ArmorPartMakerMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
@@ -29,7 +27,6 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.lwjgl.system.CallbackI;
 import org.slf4j.Logger;
 
 import java.util.Optional;
@@ -149,47 +146,61 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
     }
 
     private static void extractIngredients(ArmorPartMakerBlockEntity entity) {
-        entity.itemHandler.extractItem(0, 1, false);
+        int hammerDamage =entity.itemHandler.getStackInSlot(0).getDamageValue();
+        LOGGER.info("Hammer damage " + hammerDamage);
+        entity.itemHandler.getStackInSlot(0).setDamageValue(hammerDamage + 1);
+        if (isDurabilityZero(entity.itemHandler.getStackInSlot(0))) {
+            entity.itemHandler.extractItem(0, 1, false);
+        }
+
+        int patternDamage = entity.itemHandler.getStackInSlot(2).getDamageValue();
+        LOGGER.info("Pattern damage " + patternDamage);
+        entity.itemHandler.getStackInSlot(2).setDamageValue(patternDamage + 1);
+        if (isDurabilityZero(entity.itemHandler.getStackInSlot(2))) {
+            entity.itemHandler.extractItem(2, 1, false);
+        }
+
         entity.itemHandler.extractItem(1, 1, false);
-        entity.itemHandler.extractItem(2, 1, false);
+
         entity.resetProgress();
     }
 
     private static void craftItem(ArmorPartMakerBlockEntity entity) {
-//        Level level = entity.level;
-//        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
-//        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
-//            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
-//        }
-//
-//        Optional<ArmorPartMakerRecipe> match = level.getRecipeManager()
-//                .getRecipeFor(ArmorPartMakerRecipe.Type.INSTANCE, inventory, level);
-//
-//        if (match.isPresent()) {
-//            entity.itemHandler.setStackInSlot(3, new ItemStack(match.get().getResultItem().getItem(), 1));
-//        }
-        entity.itemHandler.setStackInSlot(3, new ItemStack(ModItems.BRONZE_INGOT.get(), 1));
+        Level level = entity.level;
+        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
+        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
+            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
+        }
+
+        Optional<ArmorPartTinkeringRecipe> match = level.getRecipeManager()
+                .getRecipeFor(ArmorPartTinkeringRecipe.Type.INSTANCE, inventory, level);
+
+        if (match.isPresent()) {
+            entity.itemHandler.setStackInSlot(3, new ItemStack(match.get().getResultItem().getItem(), 1));
+        }
+//        entity.itemHandler.setStackInSlot(3, new ItemStack(ModItems.BRONZE_INGOT.get(), 1));
     }
 
     private static boolean hasRecipe(ArmorPartMakerBlockEntity entity) {
-//        Level level = entity.level;
-//        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
-//        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
-//            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
-//        }
-//
-//        Optional<ArmorPartMakerRecipe> match = level.getRecipeManager()
-//                .getRecipeFor(ArmorPartMakerRecipe.Type.INSTANCE, inventory, level);
-//
-//        return match.isPresent() && canInsertItemIntoOutputSlot(inventory, match.get().getResultItem());
-        if (entity.itemHandler.getStackInSlot(0).getItem() == ModItems.ALUMINIUM_INGOT.get()) {
-            if (entity.itemHandler.getStackInSlot(1).getItem() == ModItems.MAGNESIUM_INGOT.get()) {
-                if (entity.itemHandler.getStackInSlot(2).getItem() == ModItems.ZINC_INGOT.get()) {
-                    return entity.itemHandler.getStackInSlot(3) == ItemStack.EMPTY;
-                }
-            }
+        Level level = entity.level;
+        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
+        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
+            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
         }
-        return false;
+
+        // Check if the items in slots match any recipe of ArmorPartTinkering type
+        Optional<ArmorPartTinkeringRecipe> match = level.getRecipeManager()
+                .getRecipeFor(ArmorPartTinkeringRecipe.Type.INSTANCE, inventory, level);
+
+        return match.isPresent() && canInsertItemIntoOutputSlot(inventory);
+//        if (entity.itemHandler.getStackInSlot(0).getItem() == ModItems.ALUMINIUM_INGOT.get()) {
+//            if (entity.itemHandler.getStackInSlot(1).getItem() == ModItems.MAGNESIUM_INGOT.get()) {
+//                if (entity.itemHandler.getStackInSlot(2).getItem() == ModItems.ZINC_INGOT.get()) {
+//                    return entity.itemHandler.getStackInSlot(3) == ItemStack.EMPTY;
+//                }
+//            }
+//        }
+//        return false;
     }
 
     private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory) {
@@ -198,5 +209,12 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
 
     public void resetProgress() {
         this.progress = 0;
+    }
+
+    public static boolean isDurabilityZero(ItemStack itemStack) {
+        if (itemStack.getDamageValue() == itemStack.getMaxDamage()) {
+            return true;
+        }
+        return false;
     }
 }

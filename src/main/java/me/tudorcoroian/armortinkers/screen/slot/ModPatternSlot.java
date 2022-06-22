@@ -1,5 +1,7 @@
 package me.tudorcoroian.armortinkers.screen.slot;
 
+import me.tudorcoroian.armortinkers.util.ModTags;
+import net.minecraft.core.Registry;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
@@ -21,6 +23,7 @@ public class ModPatternSlot extends SlotItemHandler {
     }
 
     public static boolean isPattern(ItemStack item) {
-        return true;
+        return Registry.ITEM.getHolderOrThrow(Registry.ITEM.getResourceKey(item.getItem()).get())
+                .is(ModTags.Items.PATTERNS);
     }
 }
