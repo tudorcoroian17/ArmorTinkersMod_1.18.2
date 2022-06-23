@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "#armortinkers:maple_logs",
-    "armortinkers:maple_planks"
+    "armortinkers:maple_planks",
+
+
+    "armortinkers:pattern_station"
   ]
 }

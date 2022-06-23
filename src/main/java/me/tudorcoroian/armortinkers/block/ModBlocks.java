@@ -3,6 +3,7 @@ package me.tudorcoroian.armortinkers.block;
 import me.tudorcoroian.armortinkers.ArmorTinkers;
 import me.tudorcoroian.armortinkers.block.custom.ArmorPartMakerBlock;
 import me.tudorcoroian.armortinkers.block.custom.ModFlammableRotatedPillarBlock;
+import me.tudorcoroian.armortinkers.block.custom.PatternStationBlock;
 import me.tudorcoroian.armortinkers.item.ModCreativeModeTab;
 import me.tudorcoroian.armortinkers.item.ModItems;
 import me.tudorcoroian.armortinkers.world.feature.tree.MapleTreeGrower;
@@ -28,7 +29,6 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ArmorTinkers.MOD_ID);
 
-    // New materials
     public static final RegistryObject<Block> ALUMINIUM_BLOCK = registerBlock("aluminium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(2f).requiresCorrectToolForDrops()),
@@ -113,6 +113,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ARMOR_PART_MAKER = registerBlock("armor_part_maker",
             () -> new ArmorPartMakerBlock(BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE).noOcclusion()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> PATTERN_STATION = registerBlock("pattern_station",
+            () -> new PatternStationBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()),
             ModCreativeModeTab.ARMOR_TINKERS_TAB);
 
     public static final RegistryObject<Block> MAPLE_LOG = registerBlock("maple_log",

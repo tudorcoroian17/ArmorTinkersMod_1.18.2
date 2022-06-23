@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north" : {"model": "armortinkers:block/pattern_station"},
+    "facing=south" : {"model": "armortinkers:block/pattern_station", "y": 180},
+    "facing=east" : {"model": "armortinkers:block/pattern_station", "y": 90},
+    "facing=west" : {"model": "armortinkers:block/pattern_station", "y": 270}
+  }
+}

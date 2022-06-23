@@ -1,8 +1,8 @@
 {
   "variants": {
     "facing=north" : {"model": "armortinkers:block/armor_part_maker"},
-    "facing=south" : {"model": "armortinkers:block/armor_part_maker", "y": 90},
-    "facing=east" : {"model": "armortinkers:block/armor_part_maker", "y": 180},
+    "facing=south" : {"model": "armortinkers:block/armor_part_maker", "y": 180},
+    "facing=east" : {"model": "armortinkers:block/armor_part_maker", "y": 90},
     "facing=west" : {"model": "armortinkers:block/armor_part_maker", "y": 270}
   }
 }
