@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "armortinkers:stone_hammer"
+    ]
+  },
+  "criteria": {
+    "has_cobblestone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cobblestone"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "armortinkers:stone_hammer"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cobblestone",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -9,11 +9,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
-public class ArmorPartMakerScreen extends AbstractContainerScreen<ArmorPartMakerMenu> {
+public class PatternStationScreen extends AbstractContainerScreen<PatternStationMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(ArmorTinkers.MOD_ID, "textures/gui/armor_part_maker.png");
+            new ResourceLocation(ArmorTinkers.MOD_ID, "textures/gui/pattern_station.png");
 
-    public ArmorPartMakerScreen(ArmorPartMakerMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
+    public PatternStationScreen(PatternStationMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
     }
 
@@ -33,13 +33,13 @@ public class ArmorPartMakerScreen extends AbstractContainerScreen<ArmorPartMaker
         this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
 
         if (!menu.hasMaterialInSlot()) {
-            blit(pPoseStack, x + 59, y + 22, 176, 20, 14, 15);
+            blit(pPoseStack, x + 60, y + 24, 176, 14, 12, 11);
         } else {
             blit(pPoseStack, x + 58, y + 21, 58, 21, 16, 16);
         }
 
         if (menu.isCrafting()) {
-            blit(pPoseStack, x + 85, y + 30, 176, 0, menu.getScaledProgress(), 20);
+            blit(pPoseStack, x + 85, y + 33, 176, 0, menu.getScaledProgress(), 14);
         }
     }
 

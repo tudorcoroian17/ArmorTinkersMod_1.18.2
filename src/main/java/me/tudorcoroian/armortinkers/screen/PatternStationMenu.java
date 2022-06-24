@@ -1,9 +1,8 @@
 package me.tudorcoroian.armortinkers.screen;
 
 import me.tudorcoroian.armortinkers.block.ModBlocks;
-import me.tudorcoroian.armortinkers.block.entity.ArmorPartMakerBlockEntity;
-import me.tudorcoroian.armortinkers.screen.slot.ModHammerSlot;
-import me.tudorcoroian.armortinkers.screen.slot.ModPatternSlot;
+import me.tudorcoroian.armortinkers.block.entity.PatternStationBlockEntity;
+import me.tudorcoroian.armortinkers.screen.slot.ModBlankPatternSlot;
 import me.tudorcoroian.armortinkers.screen.slot.ModResultSlot;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
@@ -15,32 +14,30 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
+public class PatternStationMenu extends AbstractContainerMenu {
 
-public class ArmorPartMakerMenu extends AbstractContainerMenu {
-
-    private final ArmorPartMakerBlockEntity blockEntity;
+    private final PatternStationBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
 
-    public ArmorPartMakerMenu(int windowId, Inventory inv, FriendlyByteBuf extraData) {
-        this(windowId, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(4));
+    public PatternStationMenu(int windowId, Inventory inv, FriendlyByteBuf extraData) {
+        this(windowId, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(3));
     }
 
-    public ArmorPartMakerMenu(int windowId, Inventory inv, BlockEntity blockEntity, ContainerData data) {
-        super(ModMenuTypes.ARMOR_PART_MAKER_MENU.get(), windowId);
-        checkContainerSize(inv, 4);
-        this.blockEntity = ((ArmorPartMakerBlockEntity) blockEntity);
+    public PatternStationMenu(int windowId, Inventory inv, BlockEntity blockEntity, ContainerData data) {
+        super(ModMenuTypes.PATTERN_STATION_MENU.get(), windowId);
+        checkContainerSize(inv, 3);
+        this.blockEntity = ((PatternStationBlockEntity) blockEntity);
         this.level = inv.player.level;
         this.data = data;
 
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent( handler -> {
-            this.addSlot(new ModHammerSlot(handler, 0, 23, 32));
-            this.addSlot(new SlotItemHandler(handler, 1, 58, 21));
-            this.addSlot(new ModPatternSlot(handler, 2, 58, 43));
-            this.addSlot(new ModResultSlot(handler, 3, 125, 32));
+        this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(handler -> {
+            this.addSlot(new SlotItemHandler(handler, 0, 58, 21));
+            this.addSlot(new ModBlankPatternSlot(handler, 1, 58, 43));
+            this.addSlot(new ModResultSlot(handler, 2, 125, 32));
         });
 
         addDataSlots(data);
@@ -49,7 +46,7 @@ public class ArmorPartMakerMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.ARMOR_PART_MAKER.get());
+                pPlayer, ModBlocks.PATTERN_STATION.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {
@@ -71,7 +68,7 @@ public class ArmorPartMakerMenu extends AbstractContainerMenu {
     }
 
     public boolean hasMaterialInSlot() {
-        return ArmorPartMakerBlockEntity.hasMaterialInSlot(blockEntity);
+        return PatternStationBlockEntity.hasMaterialInSlot(blockEntity);
     }
 
     public int getScaledProgress() {
@@ -98,7 +95,7 @@ public class ArmorPartMakerMenu extends AbstractContainerMenu {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 4;  // must be the number of slots you have!
+    private static final int TE_INVENTORY_SLOT_COUNT = 3;  // must be the number of slots you have!
 
     @Override
     public ItemStack quickMoveStack(Player playerIn, int index) {
@@ -132,5 +129,4 @@ public class ArmorPartMakerMenu extends AbstractContainerMenu {
         sourceSlot.onTake(playerIn, sourceStack);
         return copyOfSourceStack;
     }
-
 }

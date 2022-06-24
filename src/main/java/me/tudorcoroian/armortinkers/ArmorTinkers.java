@@ -7,6 +7,7 @@ import me.tudorcoroian.armortinkers.item.ModItems;
 import me.tudorcoroian.armortinkers.recipe.ModRecipes;
 import me.tudorcoroian.armortinkers.screen.ArmorPartMakerScreen;
 import me.tudorcoroian.armortinkers.screen.ModMenuTypes;
+import me.tudorcoroian.armortinkers.screen.PatternStationScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -68,5 +69,6 @@ public class ArmorTinkers {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.MAPLE_SAPLING.get(), RenderType.cutout());
 
         MenuScreens.register(ModMenuTypes.ARMOR_PART_MAKER_MENU.get(), ArmorPartMakerScreen::new);
+        MenuScreens.register(ModMenuTypes.PATTERN_STATION_MENU.get(), PatternStationScreen::new);
     }
 }

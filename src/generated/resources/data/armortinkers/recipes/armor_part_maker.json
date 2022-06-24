@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "LPL",
+    "L L"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:smooth_stone"
+    },
+    "L": {
+      "item": "minecraft:oak_log"
+    },
+    "P": {
+      "tag": "armortinkers:blank_patterns"
+    }
+  },
+  "result": {
+    "item": "armortinkers:armor_part_maker"
+  }
+}

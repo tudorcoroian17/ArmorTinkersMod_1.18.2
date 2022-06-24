@@ -1,0 +1,14 @@
+{
+  "type": "armortinkers:pattern_scribing",
+  "ingredients": [
+    {
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "item": "armortinkers:blank_wood_pattern"
+    }
+  ],
+  "output": {
+    "item": "armortinkers:tail_plate_wood_pattern"
+  }
+}

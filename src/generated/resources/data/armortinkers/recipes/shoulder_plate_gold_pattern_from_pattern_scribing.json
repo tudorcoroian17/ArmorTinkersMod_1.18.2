@@ -1,0 +1,14 @@
+{
+  "type": "armortinkers:pattern_scribing",
+  "ingredients": [
+    {
+      "item": "minecraft:green_dye"
+    },
+    {
+      "item": "armortinkers:blank_gold_pattern"
+    }
+  ],
+  "output": {
+    "item": "armortinkers:shoulder_plate_gold_pattern"
+  }
+}

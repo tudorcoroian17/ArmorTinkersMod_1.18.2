@@ -250,5 +250,6 @@
 
   "tooltip.armortinkers.hide_armour.tooltip": "§8§oUnwearable",
 
-  "blockentity.armortinkers.armor_part_maker_be": "Armor Part Station"
+  "blockentity.armortinkers.armor_part_maker_be": "Armor Part Station",
+  "blockentity.armortinkers.pattern_station_be": "Pattern Station"
 }

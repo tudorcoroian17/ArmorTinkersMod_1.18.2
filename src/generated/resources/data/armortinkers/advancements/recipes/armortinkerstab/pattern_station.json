@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "armortinkers:pattern_station"
+    ]
+  },
+  "criteria": {
+    "has_blank_pattern": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "armortinkers:blank_patterns"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "armortinkers:pattern_station"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_blank_pattern",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -16,7 +16,8 @@ public class ModMenuTypes {
 
     public static final RegistryObject<MenuType<ArmorPartMakerMenu>> ARMOR_PART_MAKER_MENU =
             registerMenuType(ArmorPartMakerMenu::new, "armor_part_maker_menu");
-
+    public static final RegistryObject<MenuType<PatternStationMenu>> PATTERN_STATION_MENU =
+            registerMenuType(PatternStationMenu::new, "pattern_station_menu");
 
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,
                                                                                                   String name) {

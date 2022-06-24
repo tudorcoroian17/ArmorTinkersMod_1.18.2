@@ -1,7 +1,8 @@
 package me.tudorcoroian.armortinkers.block.entity;
 
 import me.tudorcoroian.armortinkers.recipe.ArmorPartTinkeringRecipe;
-import me.tudorcoroian.armortinkers.screen.ArmorPartMakerMenu;
+import me.tudorcoroian.armortinkers.recipe.PatternScribingRecipe;
+import me.tudorcoroian.armortinkers.screen.PatternStationMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -28,9 +29,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvider {
-
-    private final ItemStackHandler itemHandler = new ItemStackHandler(4) {
+public class PatternStationBlockEntity extends BlockEntity implements MenuProvider {
+    private final ItemStackHandler itemHandler = new ItemStackHandler(3) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
@@ -40,17 +40,16 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 20;
+    private int maxProgress = 30;
 
-
-    public ArmorPartMakerBlockEntity(BlockPos pWorldPosition, BlockState pBlockState) {
-        super(ModBlockEntities.ARMOR_PART_MAKER.get(), pWorldPosition, pBlockState);
+    public PatternStationBlockEntity(BlockPos pWorldPosition, BlockState pBlockState) {
+        super(ModBlockEntities.PATTERN_STATION.get(), pWorldPosition, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {
                 switch (pIndex) {
-                    case 0: return ArmorPartMakerBlockEntity.this.progress;
-                    case 1: return ArmorPartMakerBlockEntity.this.maxProgress;
+                    case 0: return PatternStationBlockEntity.this.progress;
+                    case 1: return PatternStationBlockEntity.this.maxProgress;
                     default: return 0;
                 }
             }
@@ -58,8 +57,8 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
             @Override
             public void set(int pIndex, int pValue) {
                 switch (pIndex) {
-                    case 0: ArmorPartMakerBlockEntity.this.progress = progress; break;
-                    case 1: ArmorPartMakerBlockEntity.this.maxProgress = maxProgress; break;
+                    case 0: PatternStationBlockEntity.this.progress = progress; break;
+                    case 1: PatternStationBlockEntity.this.maxProgress = maxProgress; break;
                 }
             }
 
@@ -70,19 +69,17 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
         };
     }
 
-    /* From MenuProvider interface */
     @Override
     public Component getDisplayName() {
-        return new TranslatableComponent("blockentity.armortinkers.armor_part_maker_be");
+        return new TranslatableComponent("blockentity.armortinkers.pattern_station_be");
     }
 
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory, Player pPlayer) {
-        return new ArmorPartMakerMenu(pContainerId, pInventory, this, this.data);
+        return new PatternStationMenu(pContainerId, pInventory, this, this.data);
     }
 
-    /* Inherited from BlockEntity class */
     @NotNull
     @Override
     public <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @javax.annotation.Nullable Direction side) {
@@ -106,16 +103,16 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
 
     @Override
     protected void saveAdditional(CompoundTag pTag) {
-        pTag.put("armorPartMaker.inventory", itemHandler.serializeNBT());
-        pTag.putInt("armorPartMaker.progress", progress);
+        pTag.put("patternStation.inventory", itemHandler.serializeNBT());
+        pTag.putInt("patternStation.progress", progress);
         super.saveAdditional(pTag);
     }
 
     @Override
     public void load(CompoundTag pTag) {
         super.load(pTag);
-        itemHandler.deserializeNBT(pTag.getCompound("armorPartMaker.inventory"));
-        progress = pTag.getInt("armorPartMaker.progress");
+        itemHandler.deserializeNBT(pTag.getCompound("patternStation.inventory"));
+        progress = pTag.getInt("patternStation.progress");
     }
 
     public void drops() {
@@ -126,7 +123,7 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
-    public static void tick(Level pLevel, BlockPos pPos, BlockState pState, ArmorPartMakerBlockEntity pBlockEntity) {
+    public static void tick(Level pLevel, BlockPos pPos, BlockState pState, PatternStationBlockEntity pBlockEntity) {
         if(hasRecipe(pBlockEntity)) {
             pBlockEntity.progress++;
             setChanged(pLevel, pPos, pState);
@@ -141,70 +138,52 @@ public class ArmorPartMakerBlockEntity extends BlockEntity implements MenuProvid
         }
     }
 
-    private static void extractIngredients(ArmorPartMakerBlockEntity entity) {
-        int hammerDamage =entity.itemHandler.getStackInSlot(0).getDamageValue();
-        entity.itemHandler.getStackInSlot(0).setDamageValue(hammerDamage + 1);
-        if (isDurabilityZero(entity.itemHandler.getStackInSlot(0))) {
-            entity.itemHandler.extractItem(0, 1, false);
-        }
-
-        int patternDamage = entity.itemHandler.getStackInSlot(2).getDamageValue();
-        entity.itemHandler.getStackInSlot(2).setDamageValue(patternDamage + 1);
-        if (isDurabilityZero(entity.itemHandler.getStackInSlot(2))) {
-            entity.itemHandler.extractItem(2, 1, false);
-        }
-
-        entity.itemHandler.extractItem(1, 1, false);
-
-        entity.resetProgress();
-    }
-
-    private static void craftItem(ArmorPartMakerBlockEntity entity) {
+    private static boolean hasRecipe(PatternStationBlockEntity entity) {
         Level level = entity.level;
         SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
         for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
             inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
         }
 
-        Optional<ArmorPartTinkeringRecipe> match = level.getRecipeManager()
-                .getRecipeFor(ArmorPartTinkeringRecipe.Type.INSTANCE, inventory, level);
-
-        if (match.isPresent()) {
-            entity.itemHandler.setStackInSlot(3, new ItemStack(match.get().getResultItem().getItem(), 1));
-        }
-    }
-
-    private static boolean hasRecipe(ArmorPartMakerBlockEntity entity) {
-        Level level = entity.level;
-        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
-        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
-            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
-        }
-
-        // Check if the items in slots match any recipe of ArmorPartTinkering type
-        Optional<ArmorPartTinkeringRecipe> match = level.getRecipeManager()
-                .getRecipeFor(ArmorPartTinkeringRecipe.Type.INSTANCE, inventory, level);
+        // Check if the items in slots match any recipe of PatternScribingRecipe type
+        Optional<PatternScribingRecipe> match = level.getRecipeManager()
+                .getRecipeFor(PatternScribingRecipe.Type.INSTANCE, inventory, level);
 
         return match.isPresent() && canInsertItemIntoOutputSlot(inventory);
     }
 
     private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory) {
-        return inventory.getItem(3).isEmpty();
+        return inventory.getItem(2).isEmpty();
+    }
+
+    private static void craftItem(PatternStationBlockEntity entity) {
+        Level level = entity.level;
+        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
+        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
+            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
+        }
+
+        Optional<PatternScribingRecipe> match = level.getRecipeManager()
+                .getRecipeFor(PatternScribingRecipe.Type.INSTANCE, inventory, level);
+
+        if (match.isPresent()) {
+            entity.itemHandler.setStackInSlot(2, new ItemStack(match.get().getResultItem().getItem(), 1));
+        }
+    }
+
+    private static void extractIngredients(PatternStationBlockEntity entity) {
+        entity.itemHandler.extractItem(0, 1, false);
+        entity.itemHandler.extractItem(1, 1, false);
+
+        entity.resetProgress();
     }
 
     public void resetProgress() {
         this.progress = 0;
     }
 
-    public static boolean isDurabilityZero(ItemStack itemStack) {
-        if (itemStack.getDamageValue() >= itemStack.getMaxDamage()) {
-            return true;
-        }
-        return false;
-    }
-
-    public static boolean hasMaterialInSlot(ArmorPartMakerBlockEntity entity) {
-        if (entity.itemHandler.getStackInSlot(1).is(ItemStack.EMPTY.getItem())) {
+    public static boolean hasMaterialInSlot(PatternStationBlockEntity entity) {
+        if (entity.itemHandler.getStackInSlot(0).is(ItemStack.EMPTY.getItem())) {
             return false;
         }
         return true;

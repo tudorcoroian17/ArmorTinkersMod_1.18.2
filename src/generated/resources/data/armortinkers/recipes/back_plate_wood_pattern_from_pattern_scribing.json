@@ -1,0 +1,14 @@
+{
+  "type": "armortinkers:pattern_scribing",
+  "ingredients": [
+    {
+      "item": "minecraft:black_dye"
+    },
+    {
+      "item": "armortinkers:blank_wood_pattern"
+    }
+  ],
+  "output": {
+    "item": "armortinkers:back_plate_wood_pattern"
+  }
+}

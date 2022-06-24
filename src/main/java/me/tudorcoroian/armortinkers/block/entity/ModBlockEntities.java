@@ -16,6 +16,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("armor_part_maker", () ->
                     BlockEntityType.Builder.of(ArmorPartMakerBlockEntity::new,
                             ModBlocks.ARMOR_PART_MAKER.get()).build(null));
+    public static final RegistryObject<BlockEntityType<PatternStationBlockEntity>> PATTERN_STATION =
+            BLOCK_ENTITIES.register("pattern_station", () ->
+                    BlockEntityType.Builder.of(PatternStationBlockEntity::new,
+                            ModBlocks.PATTERN_STATION.get()).build(null));
 
 
     public static void register(IEventBus eventBus) {

@@ -2,13 +2,17 @@ package me.tudorcoroian.armortinkers.datagen;
 
 import me.tudorcoroian.armortinkers.block.ModBlocks;
 import me.tudorcoroian.armortinkers.datagen.custom.ArmorPartTinkeringRecipeBuilder;
+import me.tudorcoroian.armortinkers.datagen.custom.PatternScribingRecipeBuilder;
 import me.tudorcoroian.armortinkers.item.ModItems;
+import me.tudorcoroian.armortinkers.util.ModTags;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.function.Consumer;
@@ -20,6 +24,167 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
+        ShapedRecipeBuilder.shaped(ModBlocks.ARMOR_PART_MAKER.get())
+                .define('S', Blocks.SMOOTH_STONE)
+                .define('L', Blocks.OAK_LOG)
+                .define('P', ModTags.Items.BLANK_PATTERNS)
+                .pattern("SSS")
+                .pattern("LPL")
+                .pattern("L L")
+                .unlockedBy("has_blank_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.BLANK_PATTERNS).build()))
+                .save(pFinishedRecipeConsumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.PATTERN_STATION.get())
+                .define('S', Blocks.OAK_PLANKS)
+                .define('L', Blocks.OAK_LOG)
+                .define('P', ModTags.Items.BLANK_PATTERNS)
+                .pattern("SSS")
+                .pattern("LPL")
+                .pattern("L L")
+                .unlockedBy("has_blank_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.BLANK_PATTERNS).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.STONE_HAMMER.get())
+                .define('C', Blocks.COBBLESTONE)
+                .define('S', Items.STICK)
+                .pattern(" C ")
+                .pattern(" SC")
+                .pattern("S  ")
+                .unlockedBy("has_cobblestone", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Blocks.COBBLESTONE).build()))
+                .save(pFinishedRecipeConsumer);
+        ShapedRecipeBuilder.shaped(ModItems.IRON_HAMMER.get())
+                .define('I', Items.IRON_INGOT)
+                .define('S', Items.STICK)
+                .pattern(" I ")
+                .pattern(" SI")
+                .pattern("S  ")
+                .unlockedBy("has_iron_ingot", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.BLANK_WOOD_PATTERN.get())
+                .define('W', ModTags.Items.WOODEN_PLANKS)
+                .define('S', Items.STICK)
+                .pattern("WS")
+                .pattern("SW")
+                .unlockedBy("has_stick", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.STICK).build()))
+                .save(pFinishedRecipeConsumer);
+        ShapedRecipeBuilder.shaped(ModItems.BLANK_GOLD_PATTERN.get())
+                .define('G', Items.GOLD_INGOT)
+                .define('S', Items.STICK)
+                .pattern("GS")
+                .pattern("SG")
+                .unlockedBy("has_stick", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.STICK).build()))
+                .save(pFinishedRecipeConsumer);
+
+        new PatternScribingRecipeBuilder(Items.RED_DYE,
+                ModItems.BLANK_WOOD_PATTERN.get(),
+                ModItems.HEAD_PLATE_WOOD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_wood_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_WOOD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        new PatternScribingRecipeBuilder(Items.RED_DYE,
+                ModItems.BLANK_GOLD_PATTERN.get(),
+                ModItems.HEAD_PLATE_GOLD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_gold_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_GOLD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        new PatternScribingRecipeBuilder(Items.BLUE_DYE,
+                ModItems.BLANK_WOOD_PATTERN.get(),
+                ModItems.FRONT_PLATE_WOOD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_wood_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_WOOD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        new PatternScribingRecipeBuilder(Items.BLUE_DYE,
+                ModItems.BLANK_GOLD_PATTERN.get(),
+                ModItems.FRONT_PLATE_GOLD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_gold_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_GOLD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        new PatternScribingRecipeBuilder(Items.BLACK_DYE,
+                ModItems.BLANK_WOOD_PATTERN.get(),
+                ModItems.BACK_PLATE_WOOD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_wood_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_WOOD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        new PatternScribingRecipeBuilder(Items.BLACK_DYE,
+                ModItems.BLANK_GOLD_PATTERN.get(),
+                ModItems.BACK_PLATE_GOLD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_gold_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_GOLD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        new PatternScribingRecipeBuilder(Items.GREEN_DYE,
+                ModItems.BLANK_WOOD_PATTERN.get(),
+                ModItems.SHOULDER_PLATE_WOOD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_wood_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_WOOD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        new PatternScribingRecipeBuilder(Items.GREEN_DYE,
+                ModItems.BLANK_GOLD_PATTERN.get(),
+                ModItems.SHOULDER_PLATE_GOLD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_gold_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_GOLD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        new PatternScribingRecipeBuilder(Items.PINK_DYE,
+                ModItems.BLANK_WOOD_PATTERN.get(),
+                ModItems.WRIST_BAND_WOOD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_wood_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_WOOD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        new PatternScribingRecipeBuilder(Items.PINK_DYE,
+                ModItems.BLANK_GOLD_PATTERN.get(),
+                ModItems.WRIST_BAND_GOLD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_gold_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_GOLD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        new PatternScribingRecipeBuilder(Items.WHITE_DYE,
+                ModItems.BLANK_WOOD_PATTERN.get(),
+                ModItems.LEG_PLATE_WOOD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_wood_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_WOOD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        new PatternScribingRecipeBuilder(Items.WHITE_DYE,
+                ModItems.BLANK_GOLD_PATTERN.get(),
+                ModItems.LEG_PLATE_GOLD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_gold_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_GOLD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        new PatternScribingRecipeBuilder(Items.YELLOW_DYE,
+                ModItems.BLANK_WOOD_PATTERN.get(),
+                ModItems.TAIL_PLATE_WOOD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_wood_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_WOOD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        new PatternScribingRecipeBuilder(Items.YELLOW_DYE,
+                ModItems.BLANK_GOLD_PATTERN.get(),
+                ModItems.TAIL_PLATE_GOLD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_gold_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_GOLD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        new PatternScribingRecipeBuilder(Items.CYAN_DYE,
+                ModItems.BLANK_WOOD_PATTERN.get(),
+                ModItems.BOOT_PLATE_WOOD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_wood_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_WOOD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        new PatternScribingRecipeBuilder(Items.CYAN_DYE,
+                ModItems.BLANK_GOLD_PATTERN.get(),
+                ModItems.BOOT_PLATE_GOLD_PATTERN.get(), 1)
+                .unlockedBy("has_blank_gold_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.BLANK_GOLD_PATTERN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
         new ArmorPartTinkeringRecipeBuilder(ModItems.IRON_HAMMER.get(),
                 ModItems.HEAD_PLATE_GOLD_PATTERN.get(),
                 ModItems.MAGNESIUM_INGOT.get(),

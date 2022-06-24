@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WS",
+    "SW"
+  ],
+  "key": {
+    "W": {
+      "tag": "armortinkers:wooden_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "armortinkers:blank_wood_pattern"
+  }
+}
