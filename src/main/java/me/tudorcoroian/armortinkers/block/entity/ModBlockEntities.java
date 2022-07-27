@@ -20,6 +20,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("pattern_station", () ->
                     BlockEntityType.Builder.of(PatternStationBlockEntity::new,
                             ModBlocks.PATTERN_STATION.get()).build(null));
+    public static final RegistryObject<BlockEntityType<ArmorForgeFirstTierBlockEntity>> ARMOR_FORGE_TIER_1 =
+            BLOCK_ENTITIES.register("armor_forge_tier_1", () ->
+                    BlockEntityType.Builder.of(ArmorForgeFirstTierBlockEntity::new,
+                            ModBlocks.ARMOR_FORGE_TIER_1.get()).build(null));
 
 
     public static void register(IEventBus eventBus) {

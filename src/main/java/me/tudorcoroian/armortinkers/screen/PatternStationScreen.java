@@ -3,9 +3,12 @@ package me.tudorcoroian.armortinkers.screen;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import me.tudorcoroian.armortinkers.ArmorTinkers;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 
@@ -20,6 +23,13 @@ public class PatternStationScreen extends AbstractContainerScreen<PatternStation
     @Override
     protected void init() {
         super.init();
+//        button = new ImageButton(this.leftPos + imageWidth + 1, this.topPos, 16, 16, 0, 0, 0,
+//                WIDGET_TEXTURE,
+//                btn -> {
+//                    Minecraft.getInstance().player.displayClientMessage(new TextComponent("Yippie Ka Yey!"), true);
+//                    texture = TEXTURE2;
+//                });
+//        this.addRenderableWidget(button);
     }
 
     @Override
@@ -48,5 +58,6 @@ public class PatternStationScreen extends AbstractContainerScreen<PatternStation
         renderBackground(pPoseStack);
         super.render(pPoseStack, mouseX, mouseY, delta);
         renderTooltip(pPoseStack, mouseX, mouseY);
+
     }
 }

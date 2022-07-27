@@ -235,6 +235,8 @@
   "block.armortinkers.magnesium_deepslate_ore": "Deepslate Magnesium Ore",
   "block.armortinkers.armor_part_maker": "Armor Part Station",
   "block.armortinkers.pattern_station": "Pattern Station",
+  "block.armortinkers.armor_forge_tier_1": "Armor Forge Tier 1",
+  "block.armortinkers.armor_forge_tier_2": "Armor Forge Tier 2",
   "block.armortinkers.maple_log": "Maple Log",
   "block.armortinkers.maple_wood": "Maple Wood",
   "block.armortinkers.stripped_maple_log": "Stripped Maple Log",
@@ -251,5 +253,6 @@
   "tooltip.armortinkers.hide_armour.tooltip": "§8§oUnwearable",
 
   "blockentity.armortinkers.armor_part_maker_be": "Armor Part Station",
-  "blockentity.armortinkers.pattern_station_be": "Pattern Station"
+  "blockentity.armortinkers.pattern_station_be": "Pattern Station",
+  "blockentity.armortinkers.armor_forge_be": "Armor Forge"
 }

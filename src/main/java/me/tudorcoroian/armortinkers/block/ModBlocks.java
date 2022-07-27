@@ -1,9 +1,7 @@
 package me.tudorcoroian.armortinkers.block;
 
 import me.tudorcoroian.armortinkers.ArmorTinkers;
-import me.tudorcoroian.armortinkers.block.custom.ArmorPartMakerBlock;
-import me.tudorcoroian.armortinkers.block.custom.ModFlammableRotatedPillarBlock;
-import me.tudorcoroian.armortinkers.block.custom.PatternStationBlock;
+import me.tudorcoroian.armortinkers.block.custom.*;
 import me.tudorcoroian.armortinkers.item.ModCreativeModeTab;
 import me.tudorcoroian.armortinkers.item.ModItems;
 import me.tudorcoroian.armortinkers.world.feature.tree.MapleTreeGrower;
@@ -116,6 +114,12 @@ public class ModBlocks {
             ModCreativeModeTab.ARMOR_TINKERS_TAB);
     public static final RegistryObject<Block> PATTERN_STATION = registerBlock("pattern_station",
             () -> new PatternStationBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> ARMOR_FORGE_TIER_1 = registerBlock("armor_forge_tier_1",
+            () -> new ArmorForgeFirstTier(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).noOcclusion()),
+            ModCreativeModeTab.ARMOR_TINKERS_TAB);
+    public static final RegistryObject<Block> ARMOR_FORGE_TIER_2 = registerBlock("armor_forge_tier_2",
+            () -> new ArmorForgeSecondTier(BlockBehaviour.Properties.copy(Blocks.ANVIL).noOcclusion()),
             ModCreativeModeTab.ARMOR_TINKERS_TAB);
 
     public static final RegistryObject<Block> MAPLE_LOG = registerBlock("maple_log",

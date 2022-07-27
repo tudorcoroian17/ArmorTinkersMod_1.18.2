@@ -5,6 +5,7 @@ import me.tudorcoroian.armortinkers.block.ModBlocks;
 import me.tudorcoroian.armortinkers.block.entity.ModBlockEntities;
 import me.tudorcoroian.armortinkers.item.ModItems;
 import me.tudorcoroian.armortinkers.recipe.ModRecipes;
+import me.tudorcoroian.armortinkers.screen.ArmorForgeFirstTierScreen;
 import me.tudorcoroian.armortinkers.screen.ArmorPartMakerScreen;
 import me.tudorcoroian.armortinkers.screen.ModMenuTypes;
 import me.tudorcoroian.armortinkers.screen.PatternStationScreen;
@@ -64,11 +65,14 @@ public class ArmorTinkers {
     private void clientSetup(final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ARMOR_PART_MAKER.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PATTERN_STATION.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ARMOR_FORGE_TIER_1.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ARMOR_FORGE_TIER_2.get(), RenderType.cutout());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.MAPLE_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.MAPLE_SAPLING.get(), RenderType.cutout());
 
         MenuScreens.register(ModMenuTypes.ARMOR_PART_MAKER_MENU.get(), ArmorPartMakerScreen::new);
         MenuScreens.register(ModMenuTypes.PATTERN_STATION_MENU.get(), PatternStationScreen::new);
+        MenuScreens.register(ModMenuTypes.ARMOR_FORGE_TIER_1_MENU.get(), ArmorForgeFirstTierScreen::new);
     }
 }
