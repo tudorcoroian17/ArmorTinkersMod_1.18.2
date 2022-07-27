@@ -20,6 +20,8 @@ public class ModMenuTypes {
             registerMenuType(PatternStationMenu::new, "pattern_station_menu");
     public static final RegistryObject<MenuType<ArmorForgeFirstTierMenu>> ARMOR_FORGE_TIER_1_MENU =
             registerMenuType(ArmorForgeFirstTierMenu::new, "armor_forge_tier_1_menu");
+    public static final RegistryObject<MenuType<ArmorForgeSecondTierMenu>> ARMOR_FORGE_TIER_2_MENU =
+            registerMenuType(ArmorForgeSecondTierMenu::new, "armor_forge_tier_2_menu");
 
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,
                                                                                                   String name) {

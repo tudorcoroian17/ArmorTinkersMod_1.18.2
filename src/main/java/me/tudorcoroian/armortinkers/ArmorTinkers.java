@@ -5,10 +5,7 @@ import me.tudorcoroian.armortinkers.block.ModBlocks;
 import me.tudorcoroian.armortinkers.block.entity.ModBlockEntities;
 import me.tudorcoroian.armortinkers.item.ModItems;
 import me.tudorcoroian.armortinkers.recipe.ModRecipes;
-import me.tudorcoroian.armortinkers.screen.ArmorForgeFirstTierScreen;
-import me.tudorcoroian.armortinkers.screen.ArmorPartMakerScreen;
-import me.tudorcoroian.armortinkers.screen.ModMenuTypes;
-import me.tudorcoroian.armortinkers.screen.PatternStationScreen;
+import me.tudorcoroian.armortinkers.screen.*;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -74,5 +71,6 @@ public class ArmorTinkers {
         MenuScreens.register(ModMenuTypes.ARMOR_PART_MAKER_MENU.get(), ArmorPartMakerScreen::new);
         MenuScreens.register(ModMenuTypes.PATTERN_STATION_MENU.get(), PatternStationScreen::new);
         MenuScreens.register(ModMenuTypes.ARMOR_FORGE_TIER_1_MENU.get(), ArmorForgeFirstTierScreen::new);
+        MenuScreens.register(ModMenuTypes.ARMOR_FORGE_TIER_2_MENU.get(), ArmorForgeSecondTierScreen::new);
     }
 }

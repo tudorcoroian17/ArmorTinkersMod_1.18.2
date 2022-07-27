@@ -1,7 +1,7 @@
 package me.tudorcoroian.armortinkers.block.entity;
 
 import com.mojang.logging.LogUtils;
-import me.tudorcoroian.armortinkers.screen.ArmorForgeFirstTierMenu;
+import me.tudorcoroian.armortinkers.screen.ArmorForgeSecondTierMenu;
 import me.tudorcoroian.armortinkers.util.ModArmorForgeSlots;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -26,7 +26,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class ArmorForgeFirstTierBlockEntity extends BlockEntity implements MenuProvider {
+public class ArmorForgeSecondTierBlockEntity extends BlockEntity implements MenuProvider {
 
     private final ItemStackHandler itemHandler = new ItemStackHandler(ModArmorForgeSlots.getNumberOfSlots()) {
         @Override
@@ -38,17 +38,16 @@ public class ArmorForgeFirstTierBlockEntity extends BlockEntity implements MenuP
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 100;
+    private int maxProgress = 200;
 
-    public ArmorForgeFirstTierBlockEntity(BlockPos pWorldPosition, BlockState pBlockState) {
-        super(ModBlockEntities.ARMOR_FORGE_TIER_1.get(), pWorldPosition, pBlockState);
-        LogUtils.getLogger().info("How many slots? " + itemHandler.getSlots());
+    public ArmorForgeSecondTierBlockEntity(BlockPos pWorldPosition, BlockState pBlockState) {
+        super(ModBlockEntities.ARMOR_FORGE_TIER_2.get(), pWorldPosition, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {
                 switch (pIndex) {
-                    case 0: return ArmorForgeFirstTierBlockEntity.this.progress;
-                    case 1: return ArmorForgeFirstTierBlockEntity.this.maxProgress;
+                    case 0: return ArmorForgeSecondTierBlockEntity.this.progress;
+                    case 1: return ArmorForgeSecondTierBlockEntity.this.maxProgress;
                     default: return 0;
                 }
             }
@@ -56,8 +55,8 @@ public class ArmorForgeFirstTierBlockEntity extends BlockEntity implements MenuP
             @Override
             public void set(int pIndex, int pValue) {
                 switch (pIndex) {
-                    case 0: ArmorForgeFirstTierBlockEntity.this.progress = progress; break;
-                    case 1: ArmorForgeFirstTierBlockEntity.this.maxProgress = maxProgress; break;
+                    case 0: ArmorForgeSecondTierBlockEntity.this.progress = progress; break;
+                    case 1: ArmorForgeSecondTierBlockEntity.this.maxProgress = maxProgress; break;
                 }
             }
 
@@ -76,7 +75,7 @@ public class ArmorForgeFirstTierBlockEntity extends BlockEntity implements MenuP
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory, Player pPlayer) {
-        return new ArmorForgeFirstTierMenu(pContainerId, pInventory, this, this.data);
+        return new ArmorForgeSecondTierMenu(pContainerId, pInventory, this, this.data);
     }
 
     @NotNull
@@ -102,16 +101,16 @@ public class ArmorForgeFirstTierBlockEntity extends BlockEntity implements MenuP
 
     @Override
     protected void saveAdditional(CompoundTag pTag) {
-        pTag.put("armorForgeFirstTier.inventory", itemHandler.serializeNBT());
-        pTag.putInt("armorForgeFirstTier.progress", progress);
+        pTag.put("armorForgeSecondTier.inventory", itemHandler.serializeNBT());
+        pTag.putInt("armorForgeSecondTier.progress", progress);
         super.saveAdditional(pTag);
     }
 
     @Override
     public void load(CompoundTag pTag) {
         super.load(pTag);
-        itemHandler.deserializeNBT(pTag.getCompound("armorForgeFirstTier.inventory"));
-        progress = pTag.getInt("armorForgeFirstTier.progress");
+        itemHandler.deserializeNBT(pTag.getCompound("armorForgeSecondTier.inventory"));
+        progress = pTag.getInt("armorSecondFirstTier.progress");
     }
 
     public void drops() {
@@ -123,11 +122,7 @@ public class ArmorForgeFirstTierBlockEntity extends BlockEntity implements MenuP
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
-    public static void tick(Level pLevel, BlockPos pPos, BlockState pState, ArmorForgeFirstTierBlockEntity pBlockEntity) {
+    public static void tick(Level pLevel, BlockPos pPos, BlockState pState, ArmorForgeSecondTierBlockEntity pBlockEntity) {
 
     }
-
-
-
-
 }

@@ -24,6 +24,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("armor_forge_tier_1", () ->
                     BlockEntityType.Builder.of(ArmorForgeFirstTierBlockEntity::new,
                             ModBlocks.ARMOR_FORGE_TIER_1.get()).build(null));
+    public static final RegistryObject<BlockEntityType<ArmorForgeSecondTierBlockEntity>> ARMOR_FORGE_TIER_2 =
+            BLOCK_ENTITIES.register("armor_forge_tier_2", () ->
+                    BlockEntityType.Builder.of(ArmorForgeSecondTierBlockEntity::new,
+                            ModBlocks.ARMOR_FORGE_TIER_2.get()).build(null));
 
 
     public static void register(IEventBus eventBus) {

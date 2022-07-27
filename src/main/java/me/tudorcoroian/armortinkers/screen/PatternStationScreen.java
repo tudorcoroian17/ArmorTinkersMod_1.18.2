@@ -23,13 +23,6 @@ public class PatternStationScreen extends AbstractContainerScreen<PatternStation
     @Override
     protected void init() {
         super.init();
-//        button = new ImageButton(this.leftPos + imageWidth + 1, this.topPos, 16, 16, 0, 0, 0,
-//                WIDGET_TEXTURE,
-//                btn -> {
-//                    Minecraft.getInstance().player.displayClientMessage(new TextComponent("Yippie Ka Yey!"), true);
-//                    texture = TEXTURE2;
-//                });
-//        this.addRenderableWidget(button);
     }
 
     @Override
