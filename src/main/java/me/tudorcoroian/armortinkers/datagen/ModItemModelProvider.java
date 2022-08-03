@@ -5,6 +5,7 @@ import me.tudorcoroian.armortinkers.item.ModItems;
 import me.tudorcoroian.armortinkers.util.ModArmorPart;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -183,6 +184,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         armorPartItem(ModItems.ADAMANTIUM_TAIL_PLATE.get(), ModArmorPart.TAIL_PLATE);
         armorPartItem(ModItems.ADAMANTIUM_BOOT_PLATE.get(), ModArmorPart.BOOT_PLATE);
 
+        armor(ModItems.HELP_HELMET.get(), EquipmentSlot.HEAD);
+        armor(ModItems.HELP_CHESTPLATE.get(), EquipmentSlot.CHEST);
+        armor(ModItems.HELP_LEGGINGS.get(), EquipmentSlot.LEGS);
+        armor(ModItems.HELP_BOOTS.get(), EquipmentSlot.FEET);
+
 
     }
 
@@ -194,6 +200,45 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder handheldItem(Item item) {
         return withExistingParent(item.getRegistryName().getPath(), new ResourceLocation("item/handheld"))
                 .texture("layer0", new ResourceLocation(ArmorTinkers.MOD_ID, "item/" + item.getRegistryName().getPath()));
+    }
+
+    private ItemModelBuilder armor(Item item, EquipmentSlot slot) {
+        switch (slot) {
+            case HEAD -> {
+                return withExistingParent(item.getRegistryName().getPath(),
+                        new ResourceLocation("item/generated"))
+                        .texture("layer0", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/helmet_left_overlay"))
+                        .texture("layer1", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/helmet_right_overlay"))
+                        .texture("layer2", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/hide_cap_overlay"))
+                        .texture("layer3", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/helmet_binding_overlay"));
+            }
+            case CHEST -> {
+                return withExistingParent(item.getRegistryName().getPath(),
+                        new ResourceLocation("item/generated"))
+                        .texture("layer0", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/chestplate_left_shoulder_overlay"))
+                        .texture("layer1", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/chestplate_right_shoulder_overlay"))
+                        .texture("layer2", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/chestplate_front_overlay"))
+                        .texture("layer3", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/chestplate_back_overlay"))
+                        .texture("layer4", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/chestplate_wrist_band_overlay"));
+            }case LEGS -> {
+                return withExistingParent(item.getRegistryName().getPath(),
+                        new ResourceLocation("item/generated"))
+                        .texture("layer0", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/leggings_left_overlay"))
+                        .texture("layer1", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/leggings_right_overlay"))
+                        .texture("layer2", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/leggings_tail_overlay"))
+                        .texture("layer3", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/hide_pants_overlay"));
+            }
+            case FEET -> {
+                return withExistingParent(item.getRegistryName().getPath(),
+                        new ResourceLocation("item/generated"))
+                        .texture("layer0", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/boots_left_overlay"))
+                        .texture("layer1", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/boots_right_overlay"))
+                        .texture("layer2", new ResourceLocation(ArmorTinkers.MOD_ID, "overlay/hide_socks_overlay"));
+            }
+            default -> {
+                return null;
+            }
+        }
     }
 
     private ItemModelBuilder armorPartItem(Item item, ModArmorPart part) {

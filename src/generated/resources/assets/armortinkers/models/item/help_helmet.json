@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "armortinkers:overlay/helmet_left_overlay",
+    "layer1": "armortinkers:overlay/helmet_right_overlay",
+    "layer2": "armortinkers:overlay/hide_cap_overlay",
+    "layer3": "armortinkers:overlay/helmet_binding_overlay"
+  }
+}

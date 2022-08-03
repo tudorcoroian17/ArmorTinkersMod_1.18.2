@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "armortinkers:overlay/chestplate_left_shoulder_overlay",
+    "layer1": "armortinkers:overlay/chestplate_right_shoulder_overlay",
+    "layer2": "armortinkers:overlay/chestplate_front_overlay",
+    "layer3": "armortinkers:overlay/chestplate_back_overlay",
+    "layer4": "armortinkers:overlay/chestplate_wrist_band_overlay"
+  }
+}

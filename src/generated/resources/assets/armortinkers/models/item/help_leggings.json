@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "armortinkers:overlay/leggings_left_overlay",
+    "layer1": "armortinkers:overlay/leggings_right_overlay",
+    "layer2": "armortinkers:overlay/leggings_tail_overlay",
+    "layer3": "armortinkers:overlay/hide_pants_overlay"
+  }
+}

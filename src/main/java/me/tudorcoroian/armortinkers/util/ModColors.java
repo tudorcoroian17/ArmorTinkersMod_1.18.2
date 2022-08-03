@@ -1,6 +1,8 @@
 package me.tudorcoroian.armortinkers.util;
 
 public class ModColors {
+
+    public static final int NONE = 16777215; // 0xFFFFFF
     public static final int MAGNESIUM = 13537472;
     public static final int WOOD = 4996390;
     public static final int CACTUS = 3758106;
@@ -21,4 +23,51 @@ public class ModColors {
     public static final int BRONZE = 15637870;
     public static final int VIBRANIUM = 6239960;
     public static final int ADAMANTIUM = 4467277;
+    
+    public static final int getColorOfMaterial(ModMaterial material) {
+        switch (material) {
+            case WOOD:
+                return WOOD;
+            case CACTUS:
+                return CACTUS;
+            case STONE:
+                return STONE;
+            case NETHERACK:
+                return NETHERACK;
+            case END_STONE:
+                return END_STONE;
+            case FLINT:
+                return FLINT;
+            case COPPER:
+                return COPPER;
+            case IRON:
+                return IRON;
+            case GOLD:
+                return GOLD;
+            case OBSIDIAN:
+                return OBSIDIAN;
+            case ALUMINIUM:
+                return ALUMINIUM;
+            case TIN:
+                return TIN;
+            case ZINC:
+                return ZINC;
+            case MAGNESIUM:
+                return MAGNESIUM;
+            case SILVER:
+                return SILVER;
+            case LEAD:
+                return LEAD;
+            case BRASS:
+                return BRASS;
+            case BRONZE:
+                return BRONZE;
+            case VIBRANIUM:
+                return VIBRANIUM;
+            case ADAMANTIUM:
+                return ADAMANTIUM;
+            default:
+                return 0;
+        }
+    }
 }

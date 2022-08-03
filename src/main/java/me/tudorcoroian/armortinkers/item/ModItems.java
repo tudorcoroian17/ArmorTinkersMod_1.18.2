@@ -1,9 +1,7 @@
 package me.tudorcoroian.armortinkers.item;
 
 import me.tudorcoroian.armortinkers.ArmorTinkers;
-import me.tudorcoroian.armortinkers.item.custom.ArmorPartItem;
-import me.tudorcoroian.armortinkers.item.custom.ResinItem;
-import me.tudorcoroian.armortinkers.recipe.ModRecipes;
+import me.tudorcoroian.armortinkers.item.custom.*;
 import me.tudorcoroian.armortinkers.util.ModColors;
 import me.tudorcoroian.armortinkers.util.ModMaterial;
 import net.minecraft.network.chat.Component;
@@ -662,6 +660,18 @@ public class ModItems {
             () -> new ArmorPartItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_PART_TAB),
                     ModColors.ADAMANTIUM, ModMaterial.ADAMANTIUM));
 
+    public static final RegistryObject<Item> HELP_HELMET = ITEMS.register("help_helmet",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB),
+            ModMaterial.WOOD, ModMaterial.CACTUS));
+    public static final RegistryObject<Item> HELP_CHESTPLATE = ITEMS.register("help_chestplate",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB),
+                    ModMaterial.CACTUS, ModMaterial.WOOD, ModMaterial.WOOD, ModMaterial.CACTUS, ModMaterial.CACTUS));
+    public static final RegistryObject<Item> HELP_LEGGINGS = ITEMS.register("help_leggings",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB),
+                    ModMaterial.WOOD, ModMaterial.CACTUS, ModMaterial.WOOD));
+    public static final RegistryObject<Item> HELP_BOOTS = ITEMS.register("help_boots",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.ARMOR_TINKERS_TAB),
+                    ModMaterial.CACTUS, ModMaterial.WOOD));
 
     // Register all the items in the list
     public static void register(IEventBus eventBus) {

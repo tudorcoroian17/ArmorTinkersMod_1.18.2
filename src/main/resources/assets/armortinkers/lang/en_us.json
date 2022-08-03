@@ -213,6 +213,11 @@
   "item.armortinkers.adamantium_tail_plate": "Adamantium Tail Plate",
   "item.armortinkers.adamantium_boot_plate": "Adamantium Boot Plate",
 
+  "item.armortinkers.help_helmet": "Tinker's Helmet",
+  "item.armortinkers.help_chestplate": "Tinker's Chestplate",
+  "item.armortinkers.help_leggings": "Tinker's Leggings",
+  "item.armortinkers.help_boots": "Tinker's Boots",
+
   "block.armortinkers.aluminium_block" : "Aluminium Block",
   "block.armortinkers.tin_block" : "Tin Block",
   "block.armortinkers.lead_block" : "Lead Block",
