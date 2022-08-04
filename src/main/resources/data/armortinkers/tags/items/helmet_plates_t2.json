@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:copper_head_plate",
+    "armortinkers:iron_head_plate",
+    "armortinkers:gold_head_plate",
+    "armortinkers:obsidian_head_plate",
+    "armortinkers:aluminium_head_plate",
+    "armortinkers:tin_head_plate",
+    "armortinkers:zinc_head_plate",
+    "armortinkers:magnesium_head_plate",
+    "armortinkers:silver_head_plate",
+    "armortinkers:lead_head_plate",
+    "armortinkers:brass_head_plate",
+    "armortinkers:bronze_head_plate",
+    "armortinkers:vibranium_head_plate",
+    "armortinkers:adamantium_head_plate"
+  ]
+}

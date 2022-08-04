@@ -1,0 +1,17 @@
+{
+	"type": "armortinkers:helmet_forging_t1",
+	"ingredients": [
+		{
+			"item": "armortinkers:wood_head_plate"
+		},
+		{
+			"item": "armortinkers:wood_head_plate"
+		},
+		{
+			"item": "armortinkers:hide_cap"
+		}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_helmet_1"
+	}
+}

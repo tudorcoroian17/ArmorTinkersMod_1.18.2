@@ -68,7 +68,15 @@ public class ArmorForgeFirstTierScreen extends AbstractContainerScreen<ArmorForg
         this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
 
         if (menu.isCrafting()) {
-            blit(pPoseStack, x + 103, y + 34, 176, 0, menu.getScaledProgress(), 11 );
+            if (this.getMenu().hideCapSlot.isActive()) {
+                blit(pPoseStack, x + 103, y + 34, 176, 0, menu.getScaledProgressHelmet(), 12 );
+            } else if (this.getMenu().hideVestSlot.isActive()) {
+                blit(pPoseStack, x + 101, y + 33 , 176, 0, menu.getScaledProgressChestplate(), 14 );
+            } else if (this.getMenu().hidePantsSlot.isActive()) {
+                blit(pPoseStack, x + 104, y + 33, 176, 0, menu.getScaledProgressLeggings(), 14 );
+            } else if (this.getMenu().hideSocksSlot.isActive()) {
+                blit(pPoseStack, x + 102, y + 34, 176, 0, menu.getScaledProgressBoots(), 12 );
+            }
         }
     }
 

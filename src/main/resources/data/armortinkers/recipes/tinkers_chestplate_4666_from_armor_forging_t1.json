@@ -1,0 +1,26 @@
+{
+	"type": "armortinkers:chestplate_forging_t1",
+	"ingredients": [
+	{
+		"item": "armortinkers:netherack_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:netherack_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:netherack_front_plate"
+	},
+	{
+		"item": "armortinkers:netherack_back_plate"
+	},
+	{
+		"item": "armortinkers:netherack_wrist_band"
+	},
+	{
+		"item": "armortinkers:hide_vest"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_chestplate_4666"
+	}
+}

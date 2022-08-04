@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:copper_boot_plate",
+    "armortinkers:iron_boot_plate",
+    "armortinkers:gold_boot_plate",
+    "armortinkers:obsidian_boot_plate",
+    "armortinkers:aluminium_boot_plate",
+    "armortinkers:tin_boot_plate",
+    "armortinkers:zinc_boot_plate",
+    "armortinkers:magnesium_boot_plate",
+    "armortinkers:silver_boot_plate",
+    "armortinkers:lead_boot_plate",
+    "armortinkers:brass_boot_plate",
+    "armortinkers:bronze_boot_plate",
+    "armortinkers:vibranium_boot_plate",
+    "armortinkers:adamantium_boot_plate"
+  ]
+}

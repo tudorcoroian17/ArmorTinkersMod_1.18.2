@@ -1,0 +1,17 @@
+{
+	"type": "armortinkers:boots_forging_t1",
+	"ingredients": [
+	{
+		"item": "armortinkers:netherack_boot_plate"
+	},
+	{
+		"item": "armortinkers:flint_boot_plate"
+	},
+	{
+		"item": "armortinkers:hide_socks"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_boots_24"
+	}
+}

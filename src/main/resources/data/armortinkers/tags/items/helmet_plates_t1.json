@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:wood_head_plate",
+    "armortinkers:cactus_head_plate",
+    "armortinkers:stone_head_plate",
+    "armortinkers:netherack_head_plate",
+    "armortinkers:end_stone_head_plate",
+    "armortinkers:flint_head_plate"
+  ]
+}

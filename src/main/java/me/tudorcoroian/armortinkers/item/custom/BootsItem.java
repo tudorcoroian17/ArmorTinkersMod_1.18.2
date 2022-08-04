@@ -8,6 +8,8 @@ import me.tudorcoroian.armortinkers.util.ModArmorPart;
 import me.tudorcoroian.armortinkers.util.ModColors;
 import me.tudorcoroian.armortinkers.util.ModMaterial;
 import me.tudorcoroian.armortinkers.util.ModMaterialProperties;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -15,12 +17,15 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.common.extensions.IForgeItem;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,6 +67,14 @@ public class BootsItem extends ArmorItem implements IForgeItem {
         this.customModifiers = builder.build();
 
         MOD_BOOTS.add(this);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        String leftBootPlateTooltip = this.leftBootPlate.getMaterialName() + "Left Boot Plate";
+        String rightBootPlateTooltip = this.rightBootPlate.getMaterialName() + "Right Boot Plate";
+        pTooltipComponents.add(new TextComponent(leftBootPlateTooltip));
+        pTooltipComponents.add(new TextComponent(rightBootPlateTooltip));
     }
 
     @Override

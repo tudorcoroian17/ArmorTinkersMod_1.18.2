@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:wood_leg_plate",
+    "armortinkers:cactus_leg_plate",
+    "armortinkers:stone_leg_plate",
+    "armortinkers:netherack_leg_plate",
+    "armortinkers:end_stone_leg_plate",
+    "armortinkers:flint_leg_plate"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:wood_front_plate",
+    "armortinkers:cactus_front_plate",
+    "armortinkers:stone_front_plate",
+    "armortinkers:netherack_front_plate",
+    "armortinkers:end_stone_front_plate",
+    "armortinkers:flint_front_plate"
+  ]
+}

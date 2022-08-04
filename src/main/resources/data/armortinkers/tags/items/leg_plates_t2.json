@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:copper_leg_plate",
+    "armortinkers:iron_leg_plate",
+    "armortinkers:gold_leg_plate",
+    "armortinkers:obsidian_leg_plate",
+    "armortinkers:aluminium_leg_plate",
+    "armortinkers:tin_leg_plate",
+    "armortinkers:zinc_leg_plate",
+    "armortinkers:magnesium_leg_plate",
+    "armortinkers:silver_leg_plate",
+    "armortinkers:lead_leg_plate",
+    "armortinkers:brass_leg_plate",
+    "armortinkers:bronze_leg_plate",
+    "armortinkers:vibranium_leg_plate",
+    "armortinkers:adamantium_leg_plate"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:copper_shoulder_plate",
+    "armortinkers:iron_shoulder_plate",
+    "armortinkers:gold_shoulder_plate",
+    "armortinkers:obsidian_shoulder_plate",
+    "armortinkers:aluminium_shoulder_plate",
+    "armortinkers:tin_shoulder_plate",
+    "armortinkers:zinc_shoulder_plate",
+    "armortinkers:magnesium_shoulder_plate",
+    "armortinkers:silver_shoulder_plate",
+    "armortinkers:lead_shoulder_plate",
+    "armortinkers:brass_shoulder_plate",
+    "armortinkers:bronze_shoulder_plate",
+    "armortinkers:vibranium_shoulder_plate",
+    "armortinkers:adamantium_shoulder_plate"
+  ]
+}

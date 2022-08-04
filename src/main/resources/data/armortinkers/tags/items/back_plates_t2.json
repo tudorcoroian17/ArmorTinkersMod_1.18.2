@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:copper_back_plate",
+    "armortinkers:iron_back_plate",
+    "armortinkers:gold_back_plate",
+    "armortinkers:obsidian_back_plate",
+    "armortinkers:aluminium_back_plate",
+    "armortinkers:tin_back_plate",
+    "armortinkers:zinc_back_plate",
+    "armortinkers:magnesium_back_plate",
+    "armortinkers:silver_back_plate",
+    "armortinkers:lead_back_plate",
+    "armortinkers:brass_back_plate",
+    "armortinkers:bronze_back_plate",
+    "armortinkers:vibranium_back_plate",
+    "armortinkers:adamantium_back_plate"
+  ]
+}

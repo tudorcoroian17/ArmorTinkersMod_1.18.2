@@ -1,0 +1,20 @@
+{
+	"type": "armortinkers:leggings_forging_t1",
+	"ingredients": [
+	{
+		"item": "armortinkers:stone_leg_plate"
+	},
+	{
+		"item": "armortinkers:cactus_leg_plate"
+	},
+	{
+		"item": "armortinkers:wood_tail_plate"
+	},
+	{
+		"item": "armortinkers:hide_pants"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_leggings_79"
+	}
+}

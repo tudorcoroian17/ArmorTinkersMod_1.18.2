@@ -132,10 +132,34 @@ public class ArmorForgeFirstTierMenu extends AbstractContainerMenu {
         return data.get(0) > 0;
     }
 
-    public int getScaledProgress() {
+    public int getScaledProgressHelmet() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);
         int progressBarSize = 12;
+
+        return maxProgress != 0 && progress != 0 ? progress * progressBarSize / maxProgress : 0;
+    }
+
+    public int getScaledProgressChestplate() {
+        int progress = this.data.get(0);
+        int maxProgress = this.data.get(1);
+        int progressBarSize = 16;
+
+        return maxProgress != 0 && progress != 0 ? progress * progressBarSize / maxProgress : 0;
+    }
+
+    public int getScaledProgressLeggings() {
+        int progress = this.data.get(0);
+        int maxProgress = this.data.get(1);
+        int progressBarSize = 10;
+
+        return maxProgress != 0 && progress != 0 ? progress * progressBarSize / maxProgress : 0;
+    }
+
+    public int getScaledProgressBoots() {
+        int progress = this.data.get(0);
+        int maxProgress = this.data.get(1);
+        int progressBarSize = 14;
 
         return maxProgress != 0 && progress != 0 ? progress * progressBarSize / maxProgress : 0;
     }

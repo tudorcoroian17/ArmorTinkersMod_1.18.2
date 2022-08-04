@@ -1,0 +1,17 @@
+{
+	"type": "armortinkers:boots_forging_t1",
+	"ingredients": [
+	{
+		"item": "armortinkers:end_stone_boot_plate"
+	},
+	{
+		"item": "armortinkers:cactus_boot_plate"
+	},
+	{
+		"item": "armortinkers:hide_socks"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_boots_26"
+	}
+}

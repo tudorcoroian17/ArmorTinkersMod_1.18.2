@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:copper_wrist_band",
+    "armortinkers:iron_wrist_band",
+    "armortinkers:gold_wrist_band",
+    "armortinkers:obsidian_wrist_band",
+    "armortinkers:aluminium_wrist_band",
+    "armortinkers:tin_wrist_band",
+    "armortinkers:zinc_wrist_band",
+    "armortinkers:magnesium_wrist_band",
+    "armortinkers:silver_wrist_band",
+    "armortinkers:lead_wrist_band",
+    "armortinkers:brass_wrist_band",
+    "armortinkers:bronze_wrist_band",
+    "armortinkers:vibranium_wrist_band",
+    "armortinkers:adamantium_wrist_band"
+  ]
+}

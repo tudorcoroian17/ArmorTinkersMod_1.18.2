@@ -24,4 +24,31 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.MAGNESIUM_HEAD_PLATE.get());
         }
     };
+    public static final CreativeModeTab HELMET_TAB = new CreativeModeTab("helmettab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.HELP_HELMET.get());
+        }
+    };
+
+    public static final CreativeModeTab CHESTPLATE_TAB = new CreativeModeTab("chestplatetab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.HELP_CHESTPLATE.get());
+        }
+    };
+
+    public static final CreativeModeTab LEGGINGS_TAB = new CreativeModeTab("leggingstab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.HELP_LEGGINGS.get());
+        }
+    };
+
+    public static final CreativeModeTab BOOTS_TAB = new CreativeModeTab("bootstab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.HELP_BOOTS.get());
+        }
+    };
 }

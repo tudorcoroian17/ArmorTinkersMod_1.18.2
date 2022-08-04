@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:wood_back_plate",
+    "armortinkers:cactus_back_plate",
+    "armortinkers:stone_back_plate",
+    "armortinkers:netherack_back_plate",
+    "armortinkers:end_stone_back_plate",
+    "armortinkers:flint_back_plate"
+  ]
+}

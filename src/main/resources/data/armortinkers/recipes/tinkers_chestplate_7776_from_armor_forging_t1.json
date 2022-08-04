@@ -1,0 +1,26 @@
+{
+	"type": "armortinkers:chestplate_forging_t1",
+	"ingredients": [
+	{
+		"item": "armortinkers:flint_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:flint_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:flint_front_plate"
+	},
+	{
+		"item": "armortinkers:flint_back_plate"
+	},
+	{
+		"item": "armortinkers:flint_wrist_band"
+	},
+	{
+		"item": "armortinkers:hide_vest"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_chestplate_7776"
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:wood_shoulder_plate",
+    "armortinkers:cactus_shoulder_plate",
+    "armortinkers:stone_shoulder_plate",
+    "armortinkers:netherack_shoulder_plate",
+    "armortinkers:end_stone_shoulder_plate",
+    "armortinkers:flint_shoulder_plate"
+  ]
+}

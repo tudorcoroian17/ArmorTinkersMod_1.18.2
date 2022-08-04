@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "armortinkers:wood_boot_plate",
+    "armortinkers:cactus_boot_plate",
+    "armortinkers:stone_boot_plate",
+    "armortinkers:netherack_boot_plate",
+    "armortinkers:end_stone_boot_plate",
+    "armortinkers:flint_boot_plate"
+  ]
+}

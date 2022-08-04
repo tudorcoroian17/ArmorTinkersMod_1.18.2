@@ -1,0 +1,26 @@
+{
+	"type": "armortinkers:chestplate_forging_t1",
+	"ingredients": [
+	{
+		"item": "armortinkers:wood_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:wood_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:wood_front_plate"
+	},
+	{
+		"item": "armortinkers:end_stone_back_plate"
+	},
+	{
+		"item": "armortinkers:netherack_wrist_band"
+	},
+	{
+		"item": "armortinkers:hide_vest"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_chestplate_28"
+	}
+}
