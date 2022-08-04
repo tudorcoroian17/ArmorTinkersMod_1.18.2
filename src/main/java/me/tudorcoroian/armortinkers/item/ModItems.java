@@ -1667,6 +1667,1276 @@ public class ModItems {
             () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
                     ModMaterial.FLINT, ModMaterial.FLINT));
 
+    public static RegistryObject<Item> TINKERS_HELMET_37 = ITEMS.register("tinkers_helmet_37",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_38 = ITEMS.register("tinkers_helmet_38",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_39 = ITEMS.register("tinkers_helmet_39",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_40 = ITEMS.register("tinkers_helmet_40",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_41 = ITEMS.register("tinkers_helmet_41",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_42 = ITEMS.register("tinkers_helmet_42",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_43 = ITEMS.register("tinkers_helmet_43",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_44 = ITEMS.register("tinkers_helmet_44",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_45 = ITEMS.register("tinkers_helmet_45",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_46 = ITEMS.register("tinkers_helmet_46",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_47 = ITEMS.register("tinkers_helmet_47",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_48 = ITEMS.register("tinkers_helmet_48",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_49 = ITEMS.register("tinkers_helmet_49",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_50 = ITEMS.register("tinkers_helmet_50",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.COPPER, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_51 = ITEMS.register("tinkers_helmet_51",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_52 = ITEMS.register("tinkers_helmet_52",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_53 = ITEMS.register("tinkers_helmet_53",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_54 = ITEMS.register("tinkers_helmet_54",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_55 = ITEMS.register("tinkers_helmet_55",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_56 = ITEMS.register("tinkers_helmet_56",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_57 = ITEMS.register("tinkers_helmet_57",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_58 = ITEMS.register("tinkers_helmet_58",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_59 = ITEMS.register("tinkers_helmet_59",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_60 = ITEMS.register("tinkers_helmet_60",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_61 = ITEMS.register("tinkers_helmet_61",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_62 = ITEMS.register("tinkers_helmet_62",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_63 = ITEMS.register("tinkers_helmet_63",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_64 = ITEMS.register("tinkers_helmet_64",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.IRON, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_65 = ITEMS.register("tinkers_helmet_65",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_66 = ITEMS.register("tinkers_helmet_66",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_67 = ITEMS.register("tinkers_helmet_67",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_68 = ITEMS.register("tinkers_helmet_68",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_69 = ITEMS.register("tinkers_helmet_69",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_70 = ITEMS.register("tinkers_helmet_70",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_71 = ITEMS.register("tinkers_helmet_71",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_72 = ITEMS.register("tinkers_helmet_72",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_73 = ITEMS.register("tinkers_helmet_73",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_74 = ITEMS.register("tinkers_helmet_74",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_75 = ITEMS.register("tinkers_helmet_75",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_76 = ITEMS.register("tinkers_helmet_76",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_77 = ITEMS.register("tinkers_helmet_77",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_78 = ITEMS.register("tinkers_helmet_78",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.GOLD, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_79 = ITEMS.register("tinkers_helmet_79",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_80 = ITEMS.register("tinkers_helmet_80",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_81 = ITEMS.register("tinkers_helmet_81",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_82 = ITEMS.register("tinkers_helmet_82",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_83 = ITEMS.register("tinkers_helmet_83",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_84 = ITEMS.register("tinkers_helmet_84",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_85 = ITEMS.register("tinkers_helmet_85",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_86 = ITEMS.register("tinkers_helmet_86",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_87 = ITEMS.register("tinkers_helmet_87",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_88 = ITEMS.register("tinkers_helmet_88",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_89 = ITEMS.register("tinkers_helmet_89",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_90 = ITEMS.register("tinkers_helmet_90",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_91 = ITEMS.register("tinkers_helmet_91",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_92 = ITEMS.register("tinkers_helmet_92",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_93 = ITEMS.register("tinkers_helmet_93",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_94 = ITEMS.register("tinkers_helmet_94",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_95 = ITEMS.register("tinkers_helmet_95",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_96 = ITEMS.register("tinkers_helmet_96",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_97 = ITEMS.register("tinkers_helmet_97",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_98 = ITEMS.register("tinkers_helmet_98",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_99 = ITEMS.register("tinkers_helmet_99",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_100 = ITEMS.register("tinkers_helmet_100",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_101 = ITEMS.register("tinkers_helmet_101",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_102 = ITEMS.register("tinkers_helmet_102",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_103 = ITEMS.register("tinkers_helmet_103",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_104 = ITEMS.register("tinkers_helmet_104",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_105 = ITEMS.register("tinkers_helmet_105",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_106 = ITEMS.register("tinkers_helmet_106",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_107 = ITEMS.register("tinkers_helmet_107",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_108 = ITEMS.register("tinkers_helmet_108",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_109 = ITEMS.register("tinkers_helmet_109",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_110 = ITEMS.register("tinkers_helmet_110",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_111 = ITEMS.register("tinkers_helmet_111",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_112 = ITEMS.register("tinkers_helmet_112",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_113 = ITEMS.register("tinkers_helmet_113",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_114 = ITEMS.register("tinkers_helmet_114",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_115 = ITEMS.register("tinkers_helmet_115",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_116 = ITEMS.register("tinkers_helmet_116",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_117 = ITEMS.register("tinkers_helmet_117",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_118 = ITEMS.register("tinkers_helmet_118",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_119 = ITEMS.register("tinkers_helmet_119",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_120 = ITEMS.register("tinkers_helmet_120",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.TIN, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_121 = ITEMS.register("tinkers_helmet_121",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_122 = ITEMS.register("tinkers_helmet_122",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_123 = ITEMS.register("tinkers_helmet_123",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_124 = ITEMS.register("tinkers_helmet_124",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_125 = ITEMS.register("tinkers_helmet_125",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_126 = ITEMS.register("tinkers_helmet_126",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_127 = ITEMS.register("tinkers_helmet_127",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_128 = ITEMS.register("tinkers_helmet_128",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_129 = ITEMS.register("tinkers_helmet_129",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_130 = ITEMS.register("tinkers_helmet_130",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_131 = ITEMS.register("tinkers_helmet_131",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_132 = ITEMS.register("tinkers_helmet_132",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_133 = ITEMS.register("tinkers_helmet_133",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_134 = ITEMS.register("tinkers_helmet_134",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ZINC, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_135 = ITEMS.register("tinkers_helmet_135",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_136 = ITEMS.register("tinkers_helmet_136",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_137 = ITEMS.register("tinkers_helmet_137",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_138 = ITEMS.register("tinkers_helmet_138",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_139 = ITEMS.register("tinkers_helmet_139",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_140 = ITEMS.register("tinkers_helmet_140",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_141 = ITEMS.register("tinkers_helmet_141",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_142 = ITEMS.register("tinkers_helmet_142",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_143 = ITEMS.register("tinkers_helmet_143",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_144 = ITEMS.register("tinkers_helmet_144",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_145 = ITEMS.register("tinkers_helmet_145",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_146 = ITEMS.register("tinkers_helmet_146",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_147 = ITEMS.register("tinkers_helmet_147",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_148 = ITEMS.register("tinkers_helmet_148",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_149 = ITEMS.register("tinkers_helmet_149",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_150 = ITEMS.register("tinkers_helmet_150",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_151 = ITEMS.register("tinkers_helmet_151",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_152 = ITEMS.register("tinkers_helmet_152",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_153 = ITEMS.register("tinkers_helmet_153",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_154 = ITEMS.register("tinkers_helmet_154",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_155 = ITEMS.register("tinkers_helmet_155",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_156 = ITEMS.register("tinkers_helmet_156",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_157 = ITEMS.register("tinkers_helmet_157",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_158 = ITEMS.register("tinkers_helmet_158",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_159 = ITEMS.register("tinkers_helmet_159",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_160 = ITEMS.register("tinkers_helmet_160",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_161 = ITEMS.register("tinkers_helmet_161",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_162 = ITEMS.register("tinkers_helmet_162",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.SILVER, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_163 = ITEMS.register("tinkers_helmet_163",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_164 = ITEMS.register("tinkers_helmet_164",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_165 = ITEMS.register("tinkers_helmet_165",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_166 = ITEMS.register("tinkers_helmet_166",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_167 = ITEMS.register("tinkers_helmet_167",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_168 = ITEMS.register("tinkers_helmet_168",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_169 = ITEMS.register("tinkers_helmet_169",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_170 = ITEMS.register("tinkers_helmet_170",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_171 = ITEMS.register("tinkers_helmet_171",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_172 = ITEMS.register("tinkers_helmet_172",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_173 = ITEMS.register("tinkers_helmet_173",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_174 = ITEMS.register("tinkers_helmet_174",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_175 = ITEMS.register("tinkers_helmet_175",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_176 = ITEMS.register("tinkers_helmet_176",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.LEAD, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_177 = ITEMS.register("tinkers_helmet_177",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_178 = ITEMS.register("tinkers_helmet_178",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_179 = ITEMS.register("tinkers_helmet_179",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_180 = ITEMS.register("tinkers_helmet_180",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_181 = ITEMS.register("tinkers_helmet_181",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_182 = ITEMS.register("tinkers_helmet_182",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_183 = ITEMS.register("tinkers_helmet_183",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_184 = ITEMS.register("tinkers_helmet_184",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_185 = ITEMS.register("tinkers_helmet_185",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_186 = ITEMS.register("tinkers_helmet_186",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_187 = ITEMS.register("tinkers_helmet_187",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_188 = ITEMS.register("tinkers_helmet_188",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_189 = ITEMS.register("tinkers_helmet_189",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_190 = ITEMS.register("tinkers_helmet_190",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRASS, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_191 = ITEMS.register("tinkers_helmet_191",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_192 = ITEMS.register("tinkers_helmet_192",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_193 = ITEMS.register("tinkers_helmet_193",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_194 = ITEMS.register("tinkers_helmet_194",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_195 = ITEMS.register("tinkers_helmet_195",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_196 = ITEMS.register("tinkers_helmet_196",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_197 = ITEMS.register("tinkers_helmet_197",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_198 = ITEMS.register("tinkers_helmet_198",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_199 = ITEMS.register("tinkers_helmet_199",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_200 = ITEMS.register("tinkers_helmet_200",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_201 = ITEMS.register("tinkers_helmet_201",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_202 = ITEMS.register("tinkers_helmet_202",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_203 = ITEMS.register("tinkers_helmet_203",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_204 = ITEMS.register("tinkers_helmet_204",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.BRONZE, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_205 = ITEMS.register("tinkers_helmet_205",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_206 = ITEMS.register("tinkers_helmet_206",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_207 = ITEMS.register("tinkers_helmet_207",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_208 = ITEMS.register("tinkers_helmet_208",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_209 = ITEMS.register("tinkers_helmet_209",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_210 = ITEMS.register("tinkers_helmet_210",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_211 = ITEMS.register("tinkers_helmet_211",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_212 = ITEMS.register("tinkers_helmet_212",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_213 = ITEMS.register("tinkers_helmet_213",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_214 = ITEMS.register("tinkers_helmet_214",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_215 = ITEMS.register("tinkers_helmet_215",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_216 = ITEMS.register("tinkers_helmet_216",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_217 = ITEMS.register("tinkers_helmet_217",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_218 = ITEMS.register("tinkers_helmet_218",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_219 = ITEMS.register("tinkers_helmet_219",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_HELMET_220 = ITEMS.register("tinkers_helmet_220",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_HELMET_221 = ITEMS.register("tinkers_helmet_221",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_HELMET_222 = ITEMS.register("tinkers_helmet_222",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_HELMET_223 = ITEMS.register("tinkers_helmet_223",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_224 = ITEMS.register("tinkers_helmet_224",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_HELMET_225 = ITEMS.register("tinkers_helmet_225",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_HELMET_226 = ITEMS.register("tinkers_helmet_226",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_227 = ITEMS.register("tinkers_helmet_227",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_HELMET_228 = ITEMS.register("tinkers_helmet_228",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_HELMET_229 = ITEMS.register("tinkers_helmet_229",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_HELMET_230 = ITEMS.register("tinkers_helmet_230",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_HELMET_231 = ITEMS.register("tinkers_helmet_231",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_HELMET_232 = ITEMS.register("tinkers_helmet_232",
+            () -> new HelmetItem(new Item.Properties().tab(ModCreativeModeTab.HELMET_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.ADAMANTIUM));
+
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_7777 = ITEMS.register("tinkers_chestplate_7777",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.COPPER, ModMaterial.COPPER, ModMaterial.COPPER, ModMaterial.COPPER, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_49148 = ITEMS.register("tinkers_chestplate_49148",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.IRON, ModMaterial.IRON, ModMaterial.IRON, ModMaterial.IRON, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_90519 = ITEMS.register("tinkers_chestplate_90519",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.GOLD, ModMaterial.GOLD, ModMaterial.GOLD, ModMaterial.GOLD, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_131890 = ITEMS.register("tinkers_chestplate_131890",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.OBSIDIAN, ModMaterial.OBSIDIAN, ModMaterial.OBSIDIAN, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_173261 = ITEMS.register("tinkers_chestplate_173261",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.ALUMINIUM, ModMaterial.ALUMINIUM, ModMaterial.ALUMINIUM, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_214632 = ITEMS.register("tinkers_chestplate_214632",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.TIN, ModMaterial.TIN, ModMaterial.TIN, ModMaterial.TIN, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_256003 = ITEMS.register("tinkers_chestplate_256003",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.ZINC, ModMaterial.ZINC, ModMaterial.ZINC, ModMaterial.ZINC, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_297374 = ITEMS.register("tinkers_chestplate_297374",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.MAGNESIUM, ModMaterial.MAGNESIUM, ModMaterial.MAGNESIUM, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_338745 = ITEMS.register("tinkers_chestplate_338745",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.SILVER, ModMaterial.SILVER, ModMaterial.SILVER, ModMaterial.SILVER, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_380116 = ITEMS.register("tinkers_chestplate_380116",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.LEAD, ModMaterial.LEAD, ModMaterial.LEAD, ModMaterial.LEAD, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_421487 = ITEMS.register("tinkers_chestplate_421487",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.BRASS, ModMaterial.BRASS, ModMaterial.BRASS, ModMaterial.BRASS, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_462858 = ITEMS.register("tinkers_chestplate_462858",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.BRONZE, ModMaterial.BRONZE, ModMaterial.BRONZE, ModMaterial.BRONZE, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_504229 = ITEMS.register("tinkers_chestplate_504229",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.VIBRANIUM, ModMaterial.VIBRANIUM, ModMaterial.VIBRANIUM, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_545600 = ITEMS.register("tinkers_chestplate_545600",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.ADAMANTIUM, ModMaterial.ADAMANTIUM, ModMaterial.ADAMANTIUM, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_CHESTPLATE_10961 = ITEMS.register("tinkers_chestplate_10961",
+            () -> new ChestPlateItem(new Item.Properties().tab(ModCreativeModeTab.CHESTPLATE_TAB),
+                    ModMaterial.COPPER, ModMaterial.IRON, ModMaterial.GOLD, ModMaterial.OBSIDIAN, ModMaterial.ZINC));
+
+    public static RegistryObject<Item> TINKERS_LEGGINGS_217 = ITEMS.register("tinkers_leggings_217",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.COPPER, ModMaterial.COPPER, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_428 = ITEMS.register("tinkers_leggings_428",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.IRON, ModMaterial.IRON, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_639 = ITEMS.register("tinkers_leggings_639",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.GOLD, ModMaterial.GOLD, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_850 = ITEMS.register("tinkers_leggings_850",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.OBSIDIAN, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_1061 = ITEMS.register("tinkers_leggings_1061",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.ALUMINIUM, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_1272 = ITEMS.register("tinkers_leggings_1272",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.TIN, ModMaterial.TIN, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_1483 = ITEMS.register("tinkers_leggings_1483",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.ZINC, ModMaterial.ZINC, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_1694 = ITEMS.register("tinkers_leggings_1694",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.MAGNESIUM, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_1905 = ITEMS.register("tinkers_leggings_1905",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.SILVER, ModMaterial.SILVER, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_2116 = ITEMS.register("tinkers_leggings_2116",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.LEAD, ModMaterial.LEAD, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_2327 = ITEMS.register("tinkers_leggings_2327",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.BRASS, ModMaterial.BRASS, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_2538 = ITEMS.register("tinkers_leggings_2538",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.BRONZE, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_2749 = ITEMS.register("tinkers_leggings_2749",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.VIBRANIUM, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_2960 = ITEMS.register("tinkers_leggings_2960",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.ADAMANTIUM, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_LEGGINGS_233 = ITEMS.register("tinkers_leggings_233",
+            () -> new LeggingsItem(new Item.Properties().tab(ModCreativeModeTab.LEGGINGS_TAB),
+                    ModMaterial.COPPER, ModMaterial.IRON, ModMaterial.GOLD));
+
+    public static RegistryObject<Item> TINKERS_BOOTS_37 = ITEMS.register("tinkers_boots_37",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_38 = ITEMS.register("tinkers_boots_38",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_39 = ITEMS.register("tinkers_boots_39",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_40 = ITEMS.register("tinkers_boots_40",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_41 = ITEMS.register("tinkers_boots_41",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_42 = ITEMS.register("tinkers_boots_42",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_43 = ITEMS.register("tinkers_boots_43",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_44 = ITEMS.register("tinkers_boots_44",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_45 = ITEMS.register("tinkers_boots_45",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_46 = ITEMS.register("tinkers_boots_46",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_47 = ITEMS.register("tinkers_boots_47",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_48 = ITEMS.register("tinkers_boots_48",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_49 = ITEMS.register("tinkers_boots_49",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_50 = ITEMS.register("tinkers_boots_50",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.COPPER, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_51 = ITEMS.register("tinkers_boots_51",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_52 = ITEMS.register("tinkers_boots_52",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_53 = ITEMS.register("tinkers_boots_53",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_54 = ITEMS.register("tinkers_boots_54",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_55 = ITEMS.register("tinkers_boots_55",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_56 = ITEMS.register("tinkers_boots_56",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_57 = ITEMS.register("tinkers_boots_57",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_58 = ITEMS.register("tinkers_boots_58",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_59 = ITEMS.register("tinkers_boots_59",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_60 = ITEMS.register("tinkers_boots_60",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_61 = ITEMS.register("tinkers_boots_61",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_62 = ITEMS.register("tinkers_boots_62",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_63 = ITEMS.register("tinkers_boots_63",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_64 = ITEMS.register("tinkers_boots_64",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.IRON, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_65 = ITEMS.register("tinkers_boots_65",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_66 = ITEMS.register("tinkers_boots_66",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_67 = ITEMS.register("tinkers_boots_67",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_68 = ITEMS.register("tinkers_boots_68",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_69 = ITEMS.register("tinkers_boots_69",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_70 = ITEMS.register("tinkers_boots_70",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_71 = ITEMS.register("tinkers_boots_71",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_72 = ITEMS.register("tinkers_boots_72",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_73 = ITEMS.register("tinkers_boots_73",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_74 = ITEMS.register("tinkers_boots_74",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_75 = ITEMS.register("tinkers_boots_75",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_76 = ITEMS.register("tinkers_boots_76",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_77 = ITEMS.register("tinkers_boots_77",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_78 = ITEMS.register("tinkers_boots_78",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.GOLD, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_79 = ITEMS.register("tinkers_boots_79",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_80 = ITEMS.register("tinkers_boots_80",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_81 = ITEMS.register("tinkers_boots_81",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_82 = ITEMS.register("tinkers_boots_82",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_83 = ITEMS.register("tinkers_boots_83",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_84 = ITEMS.register("tinkers_boots_84",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_85 = ITEMS.register("tinkers_boots_85",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_86 = ITEMS.register("tinkers_boots_86",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_87 = ITEMS.register("tinkers_boots_87",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_88 = ITEMS.register("tinkers_boots_88",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_89 = ITEMS.register("tinkers_boots_89",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_90 = ITEMS.register("tinkers_boots_90",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_91 = ITEMS.register("tinkers_boots_91",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_92 = ITEMS.register("tinkers_boots_92",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.OBSIDIAN, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_93 = ITEMS.register("tinkers_boots_93",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_94 = ITEMS.register("tinkers_boots_94",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_95 = ITEMS.register("tinkers_boots_95",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_96 = ITEMS.register("tinkers_boots_96",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_97 = ITEMS.register("tinkers_boots_97",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_98 = ITEMS.register("tinkers_boots_98",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_99 = ITEMS.register("tinkers_boots_99",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_100 = ITEMS.register("tinkers_boots_100",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_101 = ITEMS.register("tinkers_boots_101",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_102 = ITEMS.register("tinkers_boots_102",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_103 = ITEMS.register("tinkers_boots_103",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_104 = ITEMS.register("tinkers_boots_104",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_105 = ITEMS.register("tinkers_boots_105",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_106 = ITEMS.register("tinkers_boots_106",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ALUMINIUM, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_107 = ITEMS.register("tinkers_boots_107",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_108 = ITEMS.register("tinkers_boots_108",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_109 = ITEMS.register("tinkers_boots_109",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_110 = ITEMS.register("tinkers_boots_110",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_111 = ITEMS.register("tinkers_boots_111",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_112 = ITEMS.register("tinkers_boots_112",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_113 = ITEMS.register("tinkers_boots_113",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_114 = ITEMS.register("tinkers_boots_114",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_115 = ITEMS.register("tinkers_boots_115",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_116 = ITEMS.register("tinkers_boots_116",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_117 = ITEMS.register("tinkers_boots_117",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_118 = ITEMS.register("tinkers_boots_118",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_119 = ITEMS.register("tinkers_boots_119",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_120 = ITEMS.register("tinkers_boots_120",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.TIN, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_121 = ITEMS.register("tinkers_boots_121",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_122 = ITEMS.register("tinkers_boots_122",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_123 = ITEMS.register("tinkers_boots_123",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_124 = ITEMS.register("tinkers_boots_124",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_125 = ITEMS.register("tinkers_boots_125",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_126 = ITEMS.register("tinkers_boots_126",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_127 = ITEMS.register("tinkers_boots_127",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_128 = ITEMS.register("tinkers_boots_128",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_129 = ITEMS.register("tinkers_boots_129",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_130 = ITEMS.register("tinkers_boots_130",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_131 = ITEMS.register("tinkers_boots_131",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_132 = ITEMS.register("tinkers_boots_132",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_133 = ITEMS.register("tinkers_boots_133",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_134 = ITEMS.register("tinkers_boots_134",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ZINC, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_135 = ITEMS.register("tinkers_boots_135",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_136 = ITEMS.register("tinkers_boots_136",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_137 = ITEMS.register("tinkers_boots_137",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_138 = ITEMS.register("tinkers_boots_138",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_139 = ITEMS.register("tinkers_boots_139",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_140 = ITEMS.register("tinkers_boots_140",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_141 = ITEMS.register("tinkers_boots_141",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_142 = ITEMS.register("tinkers_boots_142",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_143 = ITEMS.register("tinkers_boots_143",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_144 = ITEMS.register("tinkers_boots_144",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_145 = ITEMS.register("tinkers_boots_145",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_146 = ITEMS.register("tinkers_boots_146",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_147 = ITEMS.register("tinkers_boots_147",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_148 = ITEMS.register("tinkers_boots_148",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.MAGNESIUM, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_149 = ITEMS.register("tinkers_boots_149",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_150 = ITEMS.register("tinkers_boots_150",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_151 = ITEMS.register("tinkers_boots_151",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_152 = ITEMS.register("tinkers_boots_152",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_153 = ITEMS.register("tinkers_boots_153",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_154 = ITEMS.register("tinkers_boots_154",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_155 = ITEMS.register("tinkers_boots_155",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_156 = ITEMS.register("tinkers_boots_156",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_157 = ITEMS.register("tinkers_boots_157",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_158 = ITEMS.register("tinkers_boots_158",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_159 = ITEMS.register("tinkers_boots_159",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_160 = ITEMS.register("tinkers_boots_160",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_161 = ITEMS.register("tinkers_boots_161",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_162 = ITEMS.register("tinkers_boots_162",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.SILVER, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_163 = ITEMS.register("tinkers_boots_163",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_164 = ITEMS.register("tinkers_boots_164",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_165 = ITEMS.register("tinkers_boots_165",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_166 = ITEMS.register("tinkers_boots_166",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_167 = ITEMS.register("tinkers_boots_167",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_168 = ITEMS.register("tinkers_boots_168",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_169 = ITEMS.register("tinkers_boots_169",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_170 = ITEMS.register("tinkers_boots_170",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_171 = ITEMS.register("tinkers_boots_171",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_172 = ITEMS.register("tinkers_boots_172",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_173 = ITEMS.register("tinkers_boots_173",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_174 = ITEMS.register("tinkers_boots_174",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_175 = ITEMS.register("tinkers_boots_175",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_176 = ITEMS.register("tinkers_boots_176",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.LEAD, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_177 = ITEMS.register("tinkers_boots_177",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_178 = ITEMS.register("tinkers_boots_178",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_179 = ITEMS.register("tinkers_boots_179",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_180 = ITEMS.register("tinkers_boots_180",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_181 = ITEMS.register("tinkers_boots_181",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_182 = ITEMS.register("tinkers_boots_182",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_183 = ITEMS.register("tinkers_boots_183",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_184 = ITEMS.register("tinkers_boots_184",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_185 = ITEMS.register("tinkers_boots_185",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_186 = ITEMS.register("tinkers_boots_186",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_187 = ITEMS.register("tinkers_boots_187",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_188 = ITEMS.register("tinkers_boots_188",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_189 = ITEMS.register("tinkers_boots_189",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_190 = ITEMS.register("tinkers_boots_190",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRASS, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_191 = ITEMS.register("tinkers_boots_191",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_192 = ITEMS.register("tinkers_boots_192",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_193 = ITEMS.register("tinkers_boots_193",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_194 = ITEMS.register("tinkers_boots_194",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_195 = ITEMS.register("tinkers_boots_195",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_196 = ITEMS.register("tinkers_boots_196",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_197 = ITEMS.register("tinkers_boots_197",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_198 = ITEMS.register("tinkers_boots_198",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_199 = ITEMS.register("tinkers_boots_199",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_200 = ITEMS.register("tinkers_boots_200",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_201 = ITEMS.register("tinkers_boots_201",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_202 = ITEMS.register("tinkers_boots_202",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_203 = ITEMS.register("tinkers_boots_203",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_204 = ITEMS.register("tinkers_boots_204",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.BRONZE, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_205 = ITEMS.register("tinkers_boots_205",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_206 = ITEMS.register("tinkers_boots_206",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_207 = ITEMS.register("tinkers_boots_207",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_208 = ITEMS.register("tinkers_boots_208",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_209 = ITEMS.register("tinkers_boots_209",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_210 = ITEMS.register("tinkers_boots_210",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_211 = ITEMS.register("tinkers_boots_211",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_212 = ITEMS.register("tinkers_boots_212",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_213 = ITEMS.register("tinkers_boots_213",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_214 = ITEMS.register("tinkers_boots_214",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_215 = ITEMS.register("tinkers_boots_215",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_216 = ITEMS.register("tinkers_boots_216",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_217 = ITEMS.register("tinkers_boots_217",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_218 = ITEMS.register("tinkers_boots_218",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.VIBRANIUM, ModMaterial.ADAMANTIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_219 = ITEMS.register("tinkers_boots_219",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.COPPER));
+    public static RegistryObject<Item> TINKERS_BOOTS_220 = ITEMS.register("tinkers_boots_220",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.IRON));
+    public static RegistryObject<Item> TINKERS_BOOTS_221 = ITEMS.register("tinkers_boots_221",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.GOLD));
+    public static RegistryObject<Item> TINKERS_BOOTS_222 = ITEMS.register("tinkers_boots_222",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.OBSIDIAN));
+    public static RegistryObject<Item> TINKERS_BOOTS_223 = ITEMS.register("tinkers_boots_223",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.ALUMINIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_224 = ITEMS.register("tinkers_boots_224",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.TIN));
+    public static RegistryObject<Item> TINKERS_BOOTS_225 = ITEMS.register("tinkers_boots_225",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.ZINC));
+    public static RegistryObject<Item> TINKERS_BOOTS_226 = ITEMS.register("tinkers_boots_226",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.MAGNESIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_227 = ITEMS.register("tinkers_boots_227",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.SILVER));
+    public static RegistryObject<Item> TINKERS_BOOTS_228 = ITEMS.register("tinkers_boots_228",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.LEAD));
+    public static RegistryObject<Item> TINKERS_BOOTS_229 = ITEMS.register("tinkers_boots_229",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.BRASS));
+    public static RegistryObject<Item> TINKERS_BOOTS_230 = ITEMS.register("tinkers_boots_230",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.BRONZE));
+    public static RegistryObject<Item> TINKERS_BOOTS_231 = ITEMS.register("tinkers_boots_231",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.VIBRANIUM));
+    public static RegistryObject<Item> TINKERS_BOOTS_232 = ITEMS.register("tinkers_boots_232",
+            () -> new BootsItem(new Item.Properties().tab(ModCreativeModeTab.BOOTS_TAB),
+                    ModMaterial.ADAMANTIUM, ModMaterial.ADAMANTIUM));
+
 
     // Register all the items in the list
     public static void register(IEventBus eventBus) {

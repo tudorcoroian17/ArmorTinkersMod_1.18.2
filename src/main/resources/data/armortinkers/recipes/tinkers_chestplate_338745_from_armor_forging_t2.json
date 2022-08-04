@@ -1,0 +1,26 @@
+{
+	"type": "armortinkers:chestplate_forging_t2",
+	"ingredients": [
+	{
+		"item": "armortinkers:silver_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:silver_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:silver_front_plate"
+	},
+	{
+		"item": "armortinkers:silver_back_plate"
+	},
+	{
+		"item": "armortinkers:silver_wrist_band"
+	},
+	{
+		"item": "armortinkers:hide_vest"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_chestplate_338745"
+	}
+}

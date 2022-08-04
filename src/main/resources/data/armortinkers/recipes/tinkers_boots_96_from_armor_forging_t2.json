@@ -1,0 +1,17 @@
+{
+	"type": "armortinkers:boots_forging_t2",
+	"ingredients": [
+	{
+		"item": "armortinkers:aluminium_boot_plate"
+	},
+	{
+		"item": "armortinkers:obsidian_boot_plate"
+	},
+	{
+		"item": "armortinkers:hide_socks"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_boots_96"
+	}
+}

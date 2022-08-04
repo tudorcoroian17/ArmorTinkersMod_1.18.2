@@ -1,0 +1,26 @@
+{
+	"type": "armortinkers:chestplate_forging_t2",
+	"ingredients": [
+	{
+		"item": "armortinkers:obsidian_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:obsidian_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:obsidian_front_plate"
+	},
+	{
+		"item": "armortinkers:obsidian_back_plate"
+	},
+	{
+		"item": "armortinkers:obsidian_wrist_band"
+	},
+	{
+		"item": "armortinkers:hide_vest"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_chestplate_131890"
+	}
+}

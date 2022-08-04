@@ -1,0 +1,17 @@
+{
+	"type": "armortinkers:helmet_forging_t2",
+	"ingredients": [
+	{
+		"item": "armortinkers:vibranium_head_plate"
+	},
+	{
+		"item": "armortinkers:adamantium_head_plate"
+	},
+	{
+		"item": "armortinkers:hide_cap"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_helmet_218"
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"type": "armortinkers:chestplate_forging_t2",
+	"ingredients": [
+	{
+		"item": "armortinkers:adamantium_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:adamantium_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:adamantium_front_plate"
+	},
+	{
+		"item": "armortinkers:adamantium_back_plate"
+	},
+	{
+		"item": "armortinkers:adamantium_wrist_band"
+	},
+	{
+		"item": "armortinkers:hide_vest"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_chestplate_545600"
+	}
+}

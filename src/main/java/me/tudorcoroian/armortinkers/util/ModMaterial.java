@@ -111,7 +111,7 @@ public enum ModMaterial {
             case VIBRANIUM:
                 return "§5§lVibranium§r §5§o";
             case ADAMANTIUM:
-                return "§0§lAdamantium§r §0§o";
+                return "§b§lAdamantium§r §b§o";
             default:
                 return "";
         }

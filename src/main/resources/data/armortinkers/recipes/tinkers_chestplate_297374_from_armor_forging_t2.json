@@ -1,0 +1,26 @@
+{
+	"type": "armortinkers:chestplate_forging_t2",
+	"ingredients": [
+	{
+		"item": "armortinkers:magnesium_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:magnesium_shoulder_plate"
+	},
+	{
+		"item": "armortinkers:magnesium_front_plate"
+	},
+	{
+		"item": "armortinkers:magnesium_back_plate"
+	},
+	{
+		"item": "armortinkers:magnesium_wrist_band"
+	},
+	{
+		"item": "armortinkers:hide_vest"
+	}
+	],
+	"output": {
+		"item": "armortinkers:tinkers_chestplate_297374"
+	}
+}
