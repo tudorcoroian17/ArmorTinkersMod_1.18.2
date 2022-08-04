@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "armortinkers:raw_magnesium"
+  },
+  "result": "armortinkers:magnesium_ingot",
+  "experience": 0.15,
+  "cookingtime": 100
+}

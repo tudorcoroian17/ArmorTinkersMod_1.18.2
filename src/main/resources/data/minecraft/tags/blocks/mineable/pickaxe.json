@@ -21,6 +21,8 @@
     "armortinkers:silver_deepslate_ore",
     "armortinkers:zinc_deepslate_ore",
     "armortinkers:magnesium_deepslate_ore",
-    "armortinkers:armor_part_maker"
+    "armortinkers:armor_part_maker",
+    "armortinkers:armor_forge_tier_1",
+    "armortinkers:armor_forge_tier_2"
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "armortinkers:raw_zinc"
+  },
+  "result": "armortinkers:zinc_ingot",
+  "experience": 0.15,
+  "cookingtime": 100
+}

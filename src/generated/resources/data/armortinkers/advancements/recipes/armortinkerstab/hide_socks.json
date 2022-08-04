@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "armortinkers:hide_socks"
+    ]
+  },
+  "criteria": {
+    "has_resin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "armortinkers:resin"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "armortinkers:hide_socks"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_resin",
+      "has_the_recipe"
+    ]
+  ]
+}

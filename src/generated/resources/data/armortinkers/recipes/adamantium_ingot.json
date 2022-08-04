@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ROR",
+    "VNV",
+    "ROR"
+  ],
+  "key": {
+    "V": {
+      "item": "armortinkers:vibranium_ingot"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "R": {
+      "item": "armortinkers:resin"
+    }
+  },
+  "result": {
+    "item": "armortinkers:adamantium_ingot"
+  }
+}

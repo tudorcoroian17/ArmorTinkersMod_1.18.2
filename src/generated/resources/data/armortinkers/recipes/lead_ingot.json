@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "armortinkers:raw_lead"
+  },
+  "result": "armortinkers:lead_ingot",
+  "experience": 0.25,
+  "cookingtime": 100
+}

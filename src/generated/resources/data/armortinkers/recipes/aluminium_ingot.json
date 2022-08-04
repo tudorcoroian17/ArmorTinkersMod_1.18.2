@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "armortinkers:raw_aluminium"
+  },
+  "result": "armortinkers:aluminium_ingot",
+  "experience": 0.15,
+  "cookingtime": 100
+}

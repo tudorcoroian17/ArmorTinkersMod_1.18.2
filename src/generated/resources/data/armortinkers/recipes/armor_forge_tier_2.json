@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "DPD",
+    "D D"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "D": {
+      "item": "minecraft:deepslate_bricks"
+    },
+    "P": {
+      "tag": "armortinkers:blank_patterns"
+    }
+  },
+  "result": {
+    "item": "armortinkers:armor_forge_tier_2"
+  }
+}

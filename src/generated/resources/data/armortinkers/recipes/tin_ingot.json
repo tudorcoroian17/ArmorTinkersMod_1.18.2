@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "armortinkers:raw_tin"
+  },
+  "result": "armortinkers:tin_ingot",
+  "experience": 0.15,
+  "cookingtime": 100
+}

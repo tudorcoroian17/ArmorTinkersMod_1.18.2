@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LRL",
+    "RRR"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "R": {
+      "item": "armortinkers:resin"
+    }
+  },
+  "result": {
+    "item": "armortinkers:hide_cap"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "armortinkers:raw_silver"
+  },
+  "result": "armortinkers:silver_ingot",
+  "experience": 0.25,
+  "cookingtime": 100
+}

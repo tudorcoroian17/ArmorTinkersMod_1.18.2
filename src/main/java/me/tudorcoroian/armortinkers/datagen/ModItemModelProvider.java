@@ -184,10 +184,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         armorPartItem(ModItems.ADAMANTIUM_TAIL_PLATE.get(), ModArmorPart.TAIL_PLATE);
         armorPartItem(ModItems.ADAMANTIUM_BOOT_PLATE.get(), ModArmorPart.BOOT_PLATE);
 
-        armor(ModItems.HELP_HELMET.get(), EquipmentSlot.HEAD);
-        armor(ModItems.HELP_CHESTPLATE.get(), EquipmentSlot.CHEST);
-        armor(ModItems.HELP_LEGGINGS.get(), EquipmentSlot.LEGS);
-        armor(ModItems.HELP_BOOTS.get(), EquipmentSlot.FEET);
+//        armor(ModItems.HELP_HELMET.get(), EquipmentSlot.HEAD);
+//        armor(ModItems.HELP_CHESTPLATE.get(), EquipmentSlot.CHEST);
+//        armor(ModItems.HELP_LEGGINGS.get(), EquipmentSlot.LEGS);
+//        armor(ModItems.HELP_BOOTS.get(), EquipmentSlot.FEET);
 
 
     }

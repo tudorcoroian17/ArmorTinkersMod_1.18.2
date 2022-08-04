@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ROR",
+    "ONO",
+    "ROR"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "R": {
+      "item": "armortinkers:resin"
+    }
+  },
+  "result": {
+    "item": "armortinkers:vibranium_ingot"
+  }
+}

@@ -7,10 +7,9 @@ import me.tudorcoroian.armortinkers.item.ModItems;
 import me.tudorcoroian.armortinkers.util.ModTags;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -24,13 +23,123 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
-        ShapedRecipeBuilder.shaped(ModBlocks.ARMOR_PART_MAKER.get())
-                .define('S', Blocks.SMOOTH_STONE)
+        ShapedRecipeBuilder.shaped(ModItems.HIDE_CAP.get())
+                .define('L', Items.LEATHER)
+                .define('R', ModItems.RESIN.get())
+                .pattern("LLL")
+                .pattern("LRL")
+                .pattern("RRR")
+                .unlockedBy("has_resin", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.RESIN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        ShapedRecipeBuilder.shaped(ModItems.HIDE_VEST.get())
+                .define('L', Items.LEATHER)
+                .define('R', ModItems.RESIN.get())
+                .pattern("LRL")
+                .pattern("LLL")
+                .pattern("LLL")
+                .unlockedBy("has_resin", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.RESIN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        ShapedRecipeBuilder.shaped(ModItems.HIDE_PANTS.get())
+                .define('L', Items.LEATHER)
+                .define('R', ModItems.RESIN.get())
+                .pattern("LLL")
+                .pattern("LRL")
+                .pattern("LRL")
+                .unlockedBy("has_resin", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.RESIN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        ShapedRecipeBuilder.shaped(ModItems.HIDE_SOCKS.get())
+                .define('L', Items.LEATHER)
+                .define('R', ModItems.RESIN.get())
+                .pattern("LRL")
+                .pattern("LRL")
+                .pattern("RRR")
+                .unlockedBy("has_resin", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.RESIN.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModItems.RAW_ALUMINIUM.get()), ModItems.ALUMINIUM_INGOT.get(), 0.15F, 100)
+                .unlockedBy("has_raw_aluminium", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.RAW_ALUMINIUM.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModItems.RAW_TIN.get()), ModItems.TIN_INGOT.get(), 0.15F, 100)
+                .unlockedBy("has_raw_aluminium", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.RAW_ALUMINIUM.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModItems.RAW_ZINC.get()), ModItems.ZINC_INGOT.get(), 0.15F, 100)
+                .unlockedBy("has_raw_aluminium", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.RAW_ALUMINIUM.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModItems.RAW_MAGNESIUM.get()), ModItems.MAGNESIUM_INGOT.get(), 0.15F, 100)
+                .unlockedBy("has_raw_aluminium", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.RAW_ALUMINIUM.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModItems.RAW_SILVER.get()), ModItems.SILVER_INGOT.get(), 0.25F, 100)
+                .unlockedBy("has_raw_aluminium", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.RAW_ALUMINIUM.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ModItems.RAW_LEAD.get()), ModItems.LEAD_INGOT.get(), 0.25F, 100)
+                .unlockedBy("has_raw_aluminium", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.RAW_ALUMINIUM.get()).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(ModItems.BRONZE_INGOT.get(), 4)
+                .requires(ModItems.TIN_INGOT.get(), 1)
+                .requires(Items.COPPER_INGOT, 3)
+                .unlockedBy("has_tin_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.TIN_INGOT.get()).build()))
+                .save(pFinishedRecipeConsumer);
+        ShapelessRecipeBuilder.shapeless(ModItems.BRASS_INGOT.get(), 4)
+                .requires(Items.GOLD_INGOT, 3)
+                .requires(Items.COPPER_INGOT, 1)
+                .unlockedBy("has_copper_ingot", inventoryTrigger(ItemPredicate.Builder.item().of(Items.COPPER_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModItems.VIBRANIUM_INGOT.get())
+                .define('O', Blocks.OBSIDIAN)
+                .define('N', Items.NETHERITE_INGOT)
+                .define('R', ModItems.RESIN.get())
+                .pattern("ROR")
+                .pattern("ONO")
+                .pattern("ROR")
+                .unlockedBy("has_netherite_ingot", inventoryTrigger(ItemPredicate.Builder.item()
+                .of(Items.NETHERITE_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+        ShapedRecipeBuilder.shaped(ModItems.ADAMANTIUM_INGOT.get())
+                .define('V', ModItems.VIBRANIUM_INGOT.get())
+                .define('O', Blocks.OBSIDIAN)
+                .define('N', Items.NETHERITE_INGOT)
+                .define('R', ModItems.RESIN.get())
+                .pattern("ROR")
+                .pattern("VNV")
+                .pattern("ROR")
+                .unlockedBy("has_netherite_ingot", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.NETHERITE_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(ModBlocks.ARMOR_FORGE_TIER_1.get())
+                .define('D', Blocks.DEEPSLATE_BRICKS)
                 .define('L', Blocks.OAK_LOG)
                 .define('P', ModTags.Items.BLANK_PATTERNS)
-                .pattern("SSS")
+                .pattern("DDD")
                 .pattern("LPL")
                 .pattern("L L")
+                .unlockedBy("has_blank_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.BLANK_PATTERNS).build()))
+                .save(pFinishedRecipeConsumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.ARMOR_FORGE_TIER_2.get())
+                .define('I', Blocks.IRON_BLOCK)
+                .define('D', Blocks.DEEPSLATE_BRICKS)
+                .define('P', ModTags.Items.BLANK_PATTERNS)
+                .pattern("III")
+                .pattern("DPD")
+                .pattern("D D")
+                .unlockedBy("has_blank_pattern", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModTags.Items.BLANK_PATTERNS).build()))
+                .save(pFinishedRecipeConsumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.ARMOR_PART_MAKER.get())
+                .define('S', Blocks.SMOOTH_STONE)
+                .define('O', Blocks.OAK_LOG)
+                .define('P', ModTags.Items.BLANK_PATTERNS)
+                .pattern("SSS")
+                .pattern("OPO")
+                .pattern("O O")
                 .unlockedBy("has_blank_pattern", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModTags.Items.BLANK_PATTERNS).build()))
                 .save(pFinishedRecipeConsumer);

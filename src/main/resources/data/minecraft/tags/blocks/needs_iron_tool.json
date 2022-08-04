@@ -9,6 +9,9 @@
     "armortinkers:lead_deepslate_ore",
     "armortinkers:silver_deepslate_ore",
 
+    "armortinkers:armor_forge_tier_1",
+    "armortinkers:armor_forge_tier_2",
+
     "#armortinkers:maple_logs"
   ]
 }
