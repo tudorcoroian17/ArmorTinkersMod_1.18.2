@@ -139,11 +139,4 @@
   url          = {https://www.jehkoba.com/jehkobas-fantasy.php},
 }
 
-@Misc{ref:kaupen_menu_img,
-  author       = {Joe Kaupen},
-  howpublished = {https://www.udemy.com/course/minecraft-modding-forge-118/learn},
-  title        = {Modding Tutorial Lecture (75)},
-  url          = {https://www.udemy.com/course/minecraft-modding-forge-118/learn/lecture/29961058},
-}
-
 @Comment{jabref-meta: databaseType:bibtex;}

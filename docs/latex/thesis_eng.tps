@@ -18,7 +18,7 @@ Document=introduction.tex
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=0
+Cursor=1
 
 [SessionInfo]
 FrameCount=1
